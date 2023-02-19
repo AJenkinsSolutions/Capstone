@@ -36,85 +36,25 @@
     <title>Home</title>
 </head>
 <body>
+    <!--header-->
+    <div th:replace="header :: header"></div>
+    <!--header-->
 
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="theme">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Brand</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarText">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Login</a>
-                            </li>
-                        </ul>
-                        <button class="btn btn-primary" id="dark-mode-button"><span class="fa-solid fa-sun"></span></button>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-    </header>
 
     <h1>home page</h1>
 
-    <div class="box"> hello world </div>
+    <div class="box"> hello world
 
-
-
-    <button class="btn btn-primary" data-bs-theme="" id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
-<!--footer-->
-  <footer>
-    <div class="b-example-divider"></div>
-    <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-            <div class="col mb-3">
-                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                    <span class="fa-solid fa-cubes"></span>
-                </a>
-                <p class="text-muted">&copy; 2022</p>
-            </div>
-
-            <div class="col mb-3">
-                <h5>Links</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Apply</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Projects</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Trainings</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
-            </div>
-
-            <div class="col mb-3">
-                <h5>Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
-            </div>
-
-        </div>
     </div>
-  </footer>
-<!--footer-->
 
+
+    <!--Scroll-btn-->
+    <button class="btn btn-primary" data-bs-theme="" id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+    <!--Scroll-btn-->
+    
+    <!--footer-->
+    <div th:replace="footer :: footer"></div>
+    <!--footer-->
 
 </body>
 </html>
