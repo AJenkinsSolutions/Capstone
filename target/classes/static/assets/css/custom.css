@@ -9,6 +9,18 @@
     --site-color-04: #E5B8F4;
 }
 
+body::after{
+    /* preload image files */
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url("static/assets/images/stock-image-1.jpg") ;
+    display: none;
+
+}
+
 /*footer*/
 
 .b-example-divider {
@@ -34,5 +46,13 @@
     width: 10px;
     height: 10px;
 }
+
+/*features/trainings-section*/
+
+#training-card-1{
+
+}
+
+
 
 
