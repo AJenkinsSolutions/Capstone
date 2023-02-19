@@ -4,6 +4,9 @@ package com.jenkins.capstone.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+/**
+ * This controller will Display the Home page to user
+ */
 @Controller
 public class HomeController {
 
@@ -13,6 +16,6 @@ public class HomeController {
      */
     @RequestMapping(value = {"", "/", "home"})
     public String displayHomeView(){
-        return "home.html";
+        return "home";
     }
 }
