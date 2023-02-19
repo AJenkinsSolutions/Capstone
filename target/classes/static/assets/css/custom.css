@@ -1,4 +1,15 @@
+@charset "UTF-8";
 
-body{
-    background: blue;
+:root{
+
+    /* ColorPalette: 'https://colorhunt.co/palette/2d033b810ca8c147e9e5b8f4' */
+    --site-color-01: #2D033B;
+    --site-color-02: #810CA8;
+    --site-color-03: #C147E9;
+    --site-color-04: #E5B8F4;
 }
+
+
+
+
+
