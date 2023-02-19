@@ -23,10 +23,16 @@
     background-color: #09131D;
 }
 
+/*testimonial*/
 
-
-
-
-
+.site-testimonial-gradient-custom {
+    background: linear-gradient(90deg, var(--site-color-01) 0%, var(--site-color-02) 35%, var(--site-color-03) 100%);
+    background-blend-mode: screen, color-dodge, overlay, difference, normal;
+}
+.carousel-indicators {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
 
 
