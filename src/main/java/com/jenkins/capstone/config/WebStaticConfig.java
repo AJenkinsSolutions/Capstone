@@ -24,7 +24,7 @@ public class WebStaticConfig implements WebMvcConfigurer {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/about").setViewName("about");
-        registry.addViewController("/training").setViewName("training");
+        registry.addViewController("/projects").setViewName("projects");
 
     }
 
