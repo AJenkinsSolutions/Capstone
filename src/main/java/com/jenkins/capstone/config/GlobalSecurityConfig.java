@@ -31,7 +31,7 @@ public class GlobalSecurityConfig {
                     auth.requestMatchers("/").permitAll();
                     auth.requestMatchers("/home").permitAll();
                     auth.requestMatchers("/about").permitAll();
-                    auth.requestMatchers("/projects/**").permitAll();
+                    auth.requestMatchers("/projects").permitAll();
                     auth.requestMatchers("/training/**").permitAll();
                 }).httpBasic(Customizer.withDefaults())
                 .build();
