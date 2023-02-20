@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<div th:replace="imports :: section"></div>
+
+<body>
+<title>Trainings</title>
+
+<!--header-->
+
+<div th:replace="header :: header"></div>
+<!--header-->
+<!-- placement flex center -->
+
+<!-- Breadcrumb -->
+<div id="about-breadcrumb" class="container m-3 p-3">
+  <h4> Trainings </h4>
+  <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a th:href="@{/home}">Home</a></li>
+      <li class="breadcrumb-item">trainings..</li>
+    </ol>
+  </div>
+</div>
+<!--breadCrumb-->
+
+<!--trainings section -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="list-group w-auto">
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+          <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">List group item heading</h6>
+              <p class="mb-0 opacity-75">Some placeholder content in a paragraph.</p>
+            </div>
+            <small class="opacity-50 text-nowrap">now</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+          <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">Another title here</h6>
+              <p class="mb-0 opacity-75">Some placeholder content in a paragraph that goes a little longer so it wraps to a new line.</p>
+            </div>
+            <small class="opacity-50 text-nowrap">3d</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+          <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">Third heading</h6>
+              <p class="mb-0 opacity-75">Some placeholder content in a paragraph.</p>
+            </div>
+            <small class="opacity-50 text-nowrap">1w</small>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<!--trainings section -->
+
+<!--Scroll-btn-->
+<button class="btn btn-primary" data-bs-theme="" id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+<!--Scroll-btn-->
+<!--footer-->
+<div th:replace="footer :: footer"></div>
+<!--footer-->
+
+
+
+
+</body>
+</html>
