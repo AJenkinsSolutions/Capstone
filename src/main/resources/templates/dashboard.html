@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<div th:replace="imports :: section"></div>
+
+<body>
+<title>contact</title>
+
+<!--header-->
+
+<div th:replace="header :: header"></div>
+<!--header-->
+<!-- placement flex center -->
+
+<!-- Breadcrumb -->
+<div id="about-breadcrumb" class="container m-3 p-3">
+    <h4> Dashboard</h4>
+    <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item">Dashboard</li>
+        </ol>
+    </div>
+</div>
+<!--breadCrumb-->
+
+
+<!--dashboard section-->
+<section class="vh-100" style="background-color: var(--site-color-05)">
+
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-12 col-xl-4">
+                <ul>
+                    <li class="alert alert-danger" role="alert" ></li>
+                </ul>
+                <div class="card" style="border-radius: 15px;">
+
+
+                    <div class="card-body text-center">
+                        <div class="mt-3 mb-4">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
+                                 class="rounded-circle img-fluid" style="width: 100px;" />
+                        </div>
+                        <h4 class="dashboard-title mb-2">Welcome back {}</h4>
+                        <p class="text-muted mb-4">@Role <span class="mx-2">|</span> {Programmer} </p>
+
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" class="btn btn-primary btn-rounded btn-lg">
+                                    <span class="fa-solid fa-user"></span> Profile
+                                </button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-primary btn-rounded btn-lg">
+                                    <span class="fa-duotone fa-inbox"></span> Messages
+                                </button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-primary btn-rounded btn-lg">
+                                    <span class="fa-solid fa-bars-progress"></span> tasks
+                                </button>
+                            </div>
+                            <div class="col">
+                            <button type="button" class="btn btn-primary btn-rounded btn-lg">
+                                <i class="fa-solid fa-rectangle-history"></i> projects
+                            </button>
+                        </div>
+
+
+                        </div>
+
+<!--                        <div class="d-flex justify-content-between text-center mt-5 mb-2">-->
+<!--                            <div>-->
+<!--                                <p class="mb-2 h5">8471</p>-->
+<!--                                <p class="text-muted mb-0">Wallets Balance</p>-->
+<!--                            </div>-->
+<!--                            <div class="px-3">-->
+<!--                                <p class="mb-2 h5">8512</p>-->
+<!--                                <p class="text-muted mb-0">Income amounts</p>-->
+<!--                            </div>-->
+<!--                            <div>-->
+<!--                                <p class="mb-2 h5">4751</p>-->
+<!--                                <p class="text-muted mb-0">Total Transactions</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--dashboard section-->
+
+
+<!--footer-->
+<div th:replace="footer :: footer"></div>
+<!--footer-->
+
+
+
+
+</body>
+</html>
