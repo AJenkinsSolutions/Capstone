@@ -19,6 +19,7 @@ import java.time.LocalDateTime;
  * MappedSuperClass: says whenever there are pojos that extend this class please treat the feilds in here as
  * columns within there table
  * @EntityListener(): Tells spring to treat this class an entity that supports auditing
+ * Tells us when ever a entity is created updated etc
  */
 @Data
 @MappedSuperclass
