@@ -14,8 +14,8 @@ public class HomeController {
      * Displays the home view
      * @return
      */
-    @RequestMapping(value = {"", "/", "profile"})
+    @RequestMapping(value = {"", "/", "inbox"})
     public String displayHomeView(){
-        return "profile";
+        return "inbox";
     }
 }

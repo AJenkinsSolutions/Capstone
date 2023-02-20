@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<div th:replace="imports :: section"></div>
+
+<body>
+<title>inbox</title>
+
+<!--header-->
+
+<div th:replace="header :: header"></div>
+<!--header-->
+<!-- placement flex center -->
+
+<!-- Breadcrumb -->
+<div id="about-breadcrumb" class="container m-3 p-3">
+  <h4>My inbox</h4>
+  <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">profile</a></li>
+      <li class="breadcrumb-item">inbox</li>
+    </ol>
+  </div>
+</div>
+<!--breadCrumb-->
+
+<!--inbox section-->
+
+<section class="vh-100" >
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2> Unread Messages</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <table class="table table-striped table-hover">
+        <thead class="table-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Mobile</th>
+          <th scope="col">Email</th>
+          <th scope="col">Desired Position</th>
+          <th scope="col">Message</th>
+          <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>name</td>
+          <td>mobile</td>
+          <td>email</td>
+          <td>posisition</td>
+          <td>message</td>
+          <td><a href="" class="btn btn-primary">CLOSE</a></td>
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <div class="row-md-6 justify-content-center">
+    <button type="button" class="btn btn-primary btn-rounded btn-md">
+      BACK
+    </button>
+  </div>
+
+
+</div>
+
+</section>
+<!--inbox section-->
+<!--Scroll-btn-->
+<button class="btn btn-primary" data-bs-theme="" id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+<!--Scroll-btn-->
+<!--footer-->
+<div th:replace="footer :: footer"></div>
+<!--footer-->
+
+
+
+
+</body>
+</html>
