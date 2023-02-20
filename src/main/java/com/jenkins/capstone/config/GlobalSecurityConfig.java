@@ -33,14 +33,9 @@ public class GlobalSecurityConfig {
                     auth.requestMatchers("/about").permitAll();
                     auth.requestMatchers("/projects").permitAll();
                     auth.requestMatchers("/training/**").permitAll();
-                }).httpBasic(Customizer.withDefaults())
+                })
                 .build();
-//                .formLogin(form -> {
-//                    form.loginPage("/login").permitAll();
-//                    form.loginProcessingUrl("/login").permitAll();
-//                    form.defaultSuccessUrl("/dashboard", true);
-//                    form.failureUrl("login?error=true");
-//                })
+
     }
 
 

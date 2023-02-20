@@ -1,80 +1,190 @@
 <!doctype html>
 <html lang="en" data-bs-theme="light" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
-<div th:replace="imports :: section"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <!-- fonts -->
+  <!--    <link rel='preconnect' href='https://fonts.googleapis.com'>-->
+  <!--    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>-->
+  <!--    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>-->
+  <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&family=Rubik+Bubbles&family=Source+Serif+Pro:ital@1&family=Ubuntu:wght@300;400;500&display=swap' rel='stylesheet'>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" defer></script>
+  <!-- Place your kit's code here -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--    favicons-->
+  <!--    &lt;!&ndash; Favicons &ndash;&gt;-->
+  <!--    <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">-->
+  <!--    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">-->
+  <!--    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">-->
+  <!--    <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">-->
+  <!--    <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">-->
+  <!--    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">-->
 
-<body>
-<title>Trainings</title>
+  <!--    <link rel="stylesheet" href="/assets/css/reset.css">-->
+  <link rel="stylesheet" type="text/css" href="/assets/css/breakpoints.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/timeline.css">
 
-<!--header-->
 
-<div th:replace="header :: header"></div>
-<!--header-->
-<!-- placement flex center -->
 
-<!-- Breadcrumb -->
-<div id="about-breadcrumb" class="container m-3 p-3">
-  <h4> Trainings </h4>
-  <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a th:href="@{/home}">Home</a></li>
-      <li class="breadcrumb-item">trainings..</li>
-    </ol>
-  </div>
-</div>
-<!--breadCrumb-->
+  <!-- js imports  -->
+  <script   src="/assets/js/main.js" defer></script>
+  <script  src="/assets/js/darkMode.js" defer></script>
+  <script  src="/assets/js/scrollToTop.js" defer></script>
+  <!-- js imports  -->
+</head>
 
-<!--trainings section -->
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="list-group w-auto">
-        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-          <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
-          <div class="d-flex gap-2 w-100 justify-content-between">
-            <div>
-              <h6 class="mb-0">List group item heading</h6>
-              <p class="mb-0 opacity-75">Some placeholder content in a paragraph.</p>
-            </div>
-            <small class="opacity-50 text-nowrap">now</small>
-          </div>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-          <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
-          <div class="d-flex gap-2 w-100 justify-content-between">
-            <div>
-              <h6 class="mb-0">Another title here</h6>
-              <p class="mb-0 opacity-75">Some placeholder content in a paragraph that goes a little longer so it wraps to a new line.</p>
-            </div>
-            <small class="opacity-50 text-nowrap">3d</small>
-          </div>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-          <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
-          <div class="d-flex gap-2 w-100 justify-content-between">
-            <div>
-              <h6 class="mb-0">Third heading</h6>
-              <p class="mb-0 opacity-75">Some placeholder content in a paragraph.</p>
-            </div>
-            <small class="opacity-50 text-nowrap">1w</small>
-          </div>
-        </a>
+  <body>
+      <title>Trainings</title>
+
+      <!--header-->
+
+      <div th:replace="header :: header"></div>
+      <!--header-->
+      <!-- placement flex center -->
+
+      <!-- Breadcrumb -->
+      <div id="about-breadcrumb" class="container m-3 p-3">
+        <h4> Trainings </h4>
+        <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a th:href="@{/home}">Home</a></li>
+            <li class="breadcrumb-item">trainings..</li>
+          </ol>
+        </div>
       </div>
-    </div>
-  </div>
+      <!--breadCrumb-->
+
+      <!--trainings section -->
+      <div class="container">
+
+        <div class="row">
+          <div class="col">
+
+            <div class="list-group w-auto">
+
+                    <!--timeline element -->
+              <section style="background-color: #F0F2F5;">
+
+                <div class="container py-5" >
+                  <div class="main-timeline-2" >
+
+                    <div class="timeline-2 left-2" th:if="${fundamentals} == true">
+                      <h5 class="sub-title-timeline"><span class="fa-sharp fa-solid fa-shapes"></span> Fundamentals </h5>
+
+                      <div class="card">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(135).webp" class="card-img-top"
+                             alt="Responsive image">
+                        <div class="card-body p-4" th:each="training : ${FUNDAMENTALS}">
+                          <h4 class="fw-bold mb-4" th:text="${training.trainingName}"></h4>
+                          <p class="text-muted mb-0" th:text="${training.day}"></p>
+                          <i class="fa-solid fa-calendar-days mb-4 mt-0"></i>
+                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="timeline-2 right-2" th:if="${essentials} == true">
+                      <h5 class="sub-title-timeline"><span class="fa-sharp fa-solid fa-shapes"></span> Essentials </h5>
+                      <div class="card">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(129).webp" class="card-img-top"
+                             alt="Responsive image">
+                        <div class="card-body p-4" th:each="training : ${ESSENTIALS}">
+                          <h4 class="fw-bold mb-4" th:text="${training.trainingName}"></h4>
+                          <p class="text-muted mb-0" th:text="${training.day}"></p>
+                          <i class="fa-solid fa-calendar-days mb-4 mt-0"></i>
+                          <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+                            sequi nesciunt.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="timeline-2 left-2" th:if="${development} == true">
+                      <h5 class="sub-title-timeline"><span class="fa-sharp fa-solid fa-shapes"></span> Development</h5>
+
+                      <div class="card">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(131).webp" class="card-img-top"
+                             alt="Responsive image">
+                        <div class="card-body p-4" th:each="training : ${DEVELOPMENT}">
+                          <h4 class="fw-bold mb-4" th:text="${training.trainingName}"></h4>
+                          <p class="text-muted mb-0" th:text="${training.day}"></p>
+                          <i class="fa-solid fa-calendar-days mb-4 mt-0"></i>
+                          <p class="mb-0">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                            adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                            aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                            suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+                            reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui
+                            dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="timeline-2 right-2" th:if="${advanced} == true">
+                      <h5 class="sub-title-timeline"><span class="fa-sharp fa-solid fa-shapes"></span> Advanced</h5>
+                      <div class="card">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(125).webp" class="card-img-top"
+                             alt="Responsive image">
+                        <div class="card-body p-4" th:each="training : ${ADVANCED}">
+                          <h4 class="fw-bold mb-4" th:text="${training.trainingName}"> Quis autem vel eum voluptate</h4>
+                          <p class="text-muted mb-0" th:text="${training.day}"></p>
+                          <i class="fa-solid fa-calendar-days mb-4 mt-0"></i>
+                          <p class="mb-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                            praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                            occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi,
+                            id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="timeline-2 left-2" th:if="${project} == true">
+                      <h5 class="sub-title-timeline"><span class="fa-sharp fa-solid fa-shapes"></span> Advanced</h5>
+
+                      <div class="card">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(144).webp" class="card-img-top"
+                             alt="Responsive image">
+                        <div class="card-body p-4" th:each="training : ${PROJECT}">
+                          <h4 class="fw-bold mb-4" th:text="${training.trainingName}">Mussum ipsum cacilds</h4>
+                          <p class="text-muted mb-0" th:text="${training.day}"></p>
+                          <i class="fa-solid fa-calendar-days mb-4 mt-0"></i>
+                          <p class="mb-0">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus
+                            saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum
+                            hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut
+                            perferendis doloribus asperiores repellat.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  
+                </div>
 
 
-</div>
-<!--trainings section -->
-
-<!--Scroll-btn-->
-<button class="btn btn-primary" data-bs-theme="" id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
-<!--Scroll-btn-->
-<!--footer-->
-<div th:replace="footer :: footer"></div>
-<!--footer-->
+              </section>
 
 
 
 
-</body>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--trainings section -->
+
+      <!--Scroll-btn-->
+      <button class="btn btn-primary" data-bs-theme="" id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+      <!--Scroll-btn-->
+      <!--footer-->
+      <div th:replace="footer :: footer"></div>
+      <!--footer-->
+
+
+
+
+  </body>
 </html>

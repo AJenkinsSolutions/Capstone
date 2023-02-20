@@ -20,8 +20,11 @@ import java.util.stream.Collectors;
 @Controller
 public class TrainingController {
 
-    @Autowired
     private TrainingService trainingService;
+    @Autowired
+    public TrainingController(TrainingService trainingService) {
+        this.trainingService = trainingService;
+    }
 
     /**
      * We are checking is display is equal to all if so we display all enumerated tags
@@ -66,7 +69,12 @@ public class TrainingController {
                     model.addAttribute("project", true);
                     break;
                 default:
-
+                    ///code here
+                    model.addAttribute("fundamentals", true);
+                    model.addAttribute("essentials", true);
+                    model.addAttribute("advanced", true);
+                    model.addAttribute("development", true);
+                    model.addAttribute("project", true);
                     break;
             }
         }
@@ -77,9 +85,8 @@ public class TrainingController {
         Training.Type[] types = Training.Type.values();
         //We need to populate a model obj with a set of attributes then send it to the view layer
         for(Training.Type type: types){
-            model.addAttribute(type.toString(),(trainingsList.stream()
-                    .filter(training ->
-                            training.getType().equals(type)).collect(Collectors.toList())));
+            model.addAttribute(type.toString(),
+                    (trainingsList.stream().filter(training -> training.getType().equals(type)).collect(Collectors.toList())));
         }
         return "training";
     }
