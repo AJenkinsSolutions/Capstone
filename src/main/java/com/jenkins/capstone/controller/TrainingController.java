@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
@@ -80,17 +81,27 @@ public class TrainingController {
         }
         //I want all the trainings
         List<Training> trainingsList = trainingService.getAllTrainingTypes();
+        System.out.println("Debug: "+ trainingsList.get(1).getType());
+        groupEnumByType(trainingsList, model);
 
-        //The values of the enum within the pojo
-        Training.Type[] types = Training.Type.values();
-        //We need to populate a model obj with a set of attributes then send it to the view layer
-        for(Training.Type type: types){
-            model.addAttribute(type.toString(),
-                    (trainingsList.stream().filter(training -> training.getType().equals(type)).collect(Collectors.toList())));
-        }
         return "training";
     }
 
+    /**
+     * Taking this list of object training types
+     * Using this sytnax to Perform a aggreate function and group the object by Type
+     * @param trainingsList
+     * @param model
+     */
+    public void groupEnumByType(List<Training> trainingsList, Model model){
+        Map<String, List<Training>> trainingsByType = trainingsList.stream()
+                .collect(Collectors.groupingBy(training -> training.getType().toString()));
+        System.out.println("Debug " + trainingsByType);
+        model.addAllAttributes(trainingsByType);
+    }
+
+
 
 }
+
 

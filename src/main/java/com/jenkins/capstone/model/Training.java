@@ -26,6 +26,13 @@ public class Training extends CoreEntity {
     @Enumerated(EnumType.STRING)
     private Type type;
 
+    public Training() {
+    }
+
+    public Training(Type type) {
+        this.type = type;
+    }
+
     //special java clss which allows you to define a set of constants
     public enum Type{
         FUNDAMENTALS, ESSENTIALS, ADVANCED, DEVELOPMENT, PROJECT
