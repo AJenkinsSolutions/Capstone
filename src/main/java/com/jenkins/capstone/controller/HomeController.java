@@ -16,6 +16,6 @@ public class HomeController {
      */
     @RequestMapping(value = {"", "/", "home"})
     public String displayHomeView(){
-        return "home";
+        return "about";
     }
 }
