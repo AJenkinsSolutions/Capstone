@@ -26,7 +26,7 @@ public class LoggerAspect {
 
     /**
      * This Aspect will trigger everytime a Execption is thrown
-     * @param joinPoint
+     * @param joinPoint : In Aspect-Oriented Programming (AOP), a join point is a point in the execution of a program where an aspect can be applied.
      * @param ex
      * @Author: Alex P Jenkins
      * @Date: 02/20/23
