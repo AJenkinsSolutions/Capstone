@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<div th:replace="imports :: section"></div>
+
+<body>
+<title>profile</title>
+
+<!--header-->
+
+<div th:replace="header :: header"></div>
+<!--header-->
+<!-- placement flex center -->
+
+<!-- Breadcrumb -->
+<div id="about-breadcrumb" class="container m-3 p-3">
+  <h4> My Profile</h4>
+  <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item">profile</li>
+    </ol>
+  </div>
+</div>
+<!--breadCrumb-->
+
+<!--signup Section-->
+
+<!-- floating label -->
+<section class="vh-100 gradient-custom">
+
+  <div class="container py-5 h-100">
+
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-12 col-lg-9 col-xl-7">
+        <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+          <div class="card-body p-4 p-md-5">
+            <h2 class="contact-title text-center">My Profile</h2>
+            <h5 class="contact-subtitle text-center text-muted mb-4 pb-2 pb-md-0 mb-md-5">Update Profile </h5>
+            <!--field-->
+            <ul>
+              <li class="alert alert-danger" role="alert" ></li>
+            </ul>
+
+            <form>
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-floating">
+                    <input type="text" id="name" class="form-control form-control-lg" />
+                    <label class="form-label" for="name">name</label>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-floating">
+                    <input type="text" id="mobileNumber" class="form-control form-control-lg" />
+                    <label class="form-label" for="mobileNumber">mobileNumber</label>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col mb-4">
+
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-lg" id="email" />
+                    <label for="email" class="form-label">email</label>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <h5 class="contact-heading text-center text-muted ">Skills </h5>
+
+
+              <div class="row">
+                <div class="col mb-4">
+
+                  <div class="form-floating">
+                    <input type="text" id="language" class="form-control form-control-lg" />
+                    <label class="form-label" for="language">language</label>
+                  </div>
+                  </div>
+
+                <div class="col mb-4">
+
+                  <div class="form-floating">
+                    <input type="text" id="ide" class="form-control form-control-lg" />
+                    <label class="form-label" for="ide">preferred IDE</label>
+                  </div>
+                </div>
+
+                </div>
+
+
+              <div class="row justify-content-center align-items-center">
+                <div class="col mb-4">
+
+                  <div class="form-check form-switch">
+                    <label for="frontEnd" class="form-label">Front end</label>
+                    <input class="form-check-input"type="checkbox" id="frontEnd">
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                  <div class="form-check form-switch">
+                    <label for="backEnd" class="form-label">Back end</label>
+                    <input class="form-check-input"type="checkbox" id="backEnd">
+                  </div>
+                </div>
+              </div>
+
+
+
+            <div class="row justify-content-center align-items-center">
+
+              <div class="col-md">
+                <button class="btn btn-primary btn-lg" type="submit" value="Submit">Update</button>
+              </div>
+
+              <div class="col-md">
+                <button class="btn btn-primary btn-lg" type="submit" value="Submit">Back</button>
+              </div>
+
+            </div>
+            </form>
+            <!--form-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!--signup-section-->
+
+<!--footer-->
+<div th:replace="footer :: footer"></div>
+<!--footer-->
+
+
+
+
+</body>
+</html>
