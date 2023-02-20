@@ -20,6 +20,9 @@ import java.time.LocalDateTime;
  * columns within there table
  * @EntityListener(): Tells spring to treat this class an entity that supports auditing
  * Tells us when ever a entity is created updated etc
+ *  @Date: 02/20/23
+ * @Version: SnapShot 1
+ * @Capstone
  */
 @Data
 @MappedSuperclass

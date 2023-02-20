@@ -1,15 +1,22 @@
 package com.jenkins.capstone.model;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
- *
+ *This base Entity will be audited to we can see
+ * when it was created, updated etc ...
+ * @Author- Alex Jenkins
  */
-@Data
+
+@Getter
+@Setter
 @Entity
 @Table(name = "trainings")
-public class training extends CoreEntity {
+public class Training extends CoreEntity {
+
+    //Seems to be equals hashcode bug in lombok
     @Id
     private String day;
 
