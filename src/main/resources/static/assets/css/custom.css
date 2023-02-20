@@ -21,7 +21,22 @@ body::after{
 
 }
 
-/*footer*/
+/*loader*/
+
+ /*#loader-wrapper {*/
+ /*    position: fixed;*/
+ /*    top: 0;*/
+ /*    right: 0;*/
+ /*    bottom: 0;*/
+ /*    left: 0;*/
+ /*    background-color: var(--site-color-04);*/
+ /*    z-index: 9999;*/
+ /*}*/
+
+
+
+
+
 
 .b-example-divider {
     height: 3rem;
