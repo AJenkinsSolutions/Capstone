@@ -13,10 +13,10 @@
 
 <!-- Breadcrumb -->
 <div id="about-breadcrumb" class="container m-3 p-3">
-  <h4> About us</h4>
+  <h4> Contact </h4>
   <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a th:href="@{/home}">Home</a></li>
       <li class="breadcrumb-item">contact</li>
     </ol>
   </div>
@@ -38,16 +38,21 @@
             <h5 class="contact-subtitle text-center text-muted mb-4 pb-2 pb-md-0 mb-md-5">Ask a question </h5>
             <!--field-->
             <ul>
-              <li class="alert alert-danger" role="alert" ></li>
+<!--              //fields is a property of thymeleaf-->
+<!--              //To perform form field operations-->
+              <li class="alert alert-danger" role="alert" th:each="error : ${#fields.errors('contact.*')}" th:text="${error}" ></li>
             </ul>
 
-            <form>
+
+<!--            //Populating the contact object we defined in our controller with values from the-->
+<!--            //Form fields-->
+            <form action="/saveMessage" method="post" class="contact-form" th:object="${contact}">
 
               <div class="row">
                 <div class="col-md-6 mb-4">
 
                   <div class="form-floating">
-                    <input type="text" id="name" class="form-control form-control-lg" />
+                    <input id="name" th:field="*{name}" class="form-control form-control-lg" />
                     <label class="form-label" for="name">name</label>
                   </div>
 
@@ -55,7 +60,7 @@
                 <div class="col-md-6 mb-4">
 
                   <div class="form-floating">
-                    <input type="text" id="mobileNumber" class="form-control form-control-lg" />
+                    <input  id="mobileNumber" th:field="*{mobileNum}" class="form-control form-control-lg" />
                     <label class="form-label" for="mobileNumber">mobileNumber</label>
                   </div>
 
@@ -66,7 +71,7 @@
                 <div class="col mb-4">
 
                   <div class="form-floating">
-                    <input type="text" class="form-control form-control-lg" id="email" />
+                    <input th:field="*{email}" class="form-control form-control-lg" id="email" />
                     <label for="email" class="form-label">email</label>
                   </div>
 
@@ -78,7 +83,7 @@
                 <div class="col mb-4">
 
                   <div class="form-floating">
-                    <input type="text" id="accountType" class="form-control form-control-lg" />
+                    <input id="accountType" th:field="*{accountType}" class="form-control form-control-lg" />
                     <label class="form-label" for="accountType">Desired position</label>
                   </div>
 
@@ -89,7 +94,7 @@
                 <div class="col mb-4">
 
                   <div class="form-floating">
-                    <textarea type="text" id="message" class="form-control form-control-lg"></textarea>
+                    <textarea id="message" th:field="*{message}" class="form-control form-control-lg"></textarea>
                     <label class="form-label" for="message">Type your message here</label>
                   </div>
 
@@ -97,7 +102,7 @@
               </div>
 
               <div class="">
-                <button class="btn btn-primary btn-lg" type="submit" value="Submit">Signup</button>
+                <button class="btn btn-primary btn-lg"  value="Submit">Signup</button>
               </div>
             </form>
             <!--form-->

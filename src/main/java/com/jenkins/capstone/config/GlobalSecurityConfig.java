@@ -33,6 +33,8 @@ public class GlobalSecurityConfig {
                     auth.requestMatchers("/about").permitAll();
                     auth.requestMatchers("/projects").permitAll();
                     auth.requestMatchers("/training/**").permitAll();
+                    auth.requestMatchers("/contact").permitAll();
+
                 })
                 .build();
 
