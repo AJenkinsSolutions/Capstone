@@ -12,9 +12,15 @@ import org.springframework.security.web.SecurityFilterChain;
 public class GlobalSecurityConfig {
 
 
-//     * From Spring Security 5.7, the WebSecurityConfigurerAdapter is deprecated to encourage users
-//     * to move towards a component-based security configuration. It is recommended to create a bean
-//     * of type SecurityFilterChain for security related configurations.
+
+    /**
+     * From Spring Security 5.7, the WebSecurityConfigurerAdapter is deprecated to encourage users
+     * to move towards a component-based security configuration. It is recommended to create a bean
+     * of type SecurityFilterChain for security related configurations.
+     * @param http
+     * @return
+     * @throws Exception
+     */
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
         return http
