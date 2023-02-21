@@ -26,6 +26,7 @@ public class GlobalSecurityConfig {
         return http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> {
+                    auth.requestMatchers("/dashboard").authenticated();
                     auth.requestMatchers("/assets/**").permitAll();
                     auth.requestMatchers("").permitAll();
                     auth.requestMatchers("/").permitAll();
@@ -35,7 +36,15 @@ public class GlobalSecurityConfig {
                     auth.requestMatchers("/training/**").permitAll();
                     auth.requestMatchers("/contact").permitAll();
                     auth.requestMatchers("/saveMsg").permitAll();
-
+                })
+                .formLogin(form -> {
+                    form.loginPage("/login").permitAll();
+                    form.loginProcessingUrl("/login").permitAll();
+                    form.defaultSuccessUrl("/dashboard", true);
+                    form.failureUrl("/login?error=true");
+                })
+                .logout(logout ->{
+                    logout.invalidateHttpSession(true).permitAll();
                 })
                 .httpBasic(Customizer.withDefaults())
                 .build();

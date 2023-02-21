@@ -11,9 +11,9 @@ import java.time.LocalDateTime;
 @Service
 public class ContactService {
 
-    @Autowired
-    private ContactRepository contactRepository;
 
+    private ContactRepository contactRepository;
+    @Autowired
     public ContactService(ContactRepository contactRepository) {
         this.contactRepository = contactRepository;
     }
