@@ -1,6 +1,8 @@
 package com.jenkins.capstone.model;
 
 import com.jenkins.capstone.audit.AuditEntity;
+import com.jenkins.capstone.decorators.InputValueMatch;
+import com.jenkins.capstone.decorators.PasswordStrength;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -8,12 +10,23 @@ import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.extern.slf4j.Slf4j;
 import org.hibernate.annotations.GenericGenerator;
 
 @Getter
 @Setter
 @Entity
+@InputValueMatch.List({
+        @InputValueMatch(
+                field = "pwd",
+                fieldMatch = "confirmPwd",
+                message = "Passwords do not match"
+        ),
+        @InputValueMatch(
+                field = "email",
+                fieldMatch = "confirmEmail",
+                message = "Email address do not match"
+        )
+})
 public class Developer extends AuditEntity {
 
 
@@ -43,6 +56,7 @@ public class Developer extends AuditEntity {
 
     @NotBlank(message = "Password is required.")
     @Size(min = 5, message = "Password must be longer than ")
+    @PasswordStrength
     private String pwd;
 
 
