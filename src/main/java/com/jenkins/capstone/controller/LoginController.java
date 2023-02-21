@@ -16,22 +16,22 @@ public class LoginController {
      *  We have 3 optional params 'error', 'logout', signup & Model
      *     we will use these params to customize our page
      */
-    @GetMapping(value = "/login")
+    @RequestMapping(value = "/login", method = {RequestMethod.GET, RequestMethod.POST})
     public String showLoginView(@RequestParam(required = false, value = "error")String error,
                                 @RequestParam(required = false, value = "logout")String logout,
                                 @RequestParam(required = false, value = "signup")String signup, Model model){
-        String alert = null;
+        String alertMsg = null;
         //Depending on the contents of our optional Request Params
         //Alert - danger || success || info
         if(error != null){
-            alert = "Username Or passward wrong";
+            alertMsg = "Username Or passward wrong";
         } else if (logout != null){
-            alert = "Youve been logged out";
+            alertMsg = "Youve been logged out";
         } else if (signup != null){
-            alert = "Registration Complete!!!, Login with new credentials";
+            alertMsg = "Registration Complete!!!, Login with new credentials";
         }
         //Add it to the model
-        model.addAttribute("alert", alert);
+        model.addAttribute("alertMsg", alertMsg);
         return "/login";
     }
 

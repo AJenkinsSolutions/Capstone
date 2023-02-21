@@ -12,10 +12,10 @@
 
 <!-- Breadcrumb -->
 <div id="about-breadcrumb" class="container m-3 p-3">
-  <h4> About us</h4>
+  <h4>Login</h4>
   <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a th:href="@{/home}">Home</a></li>
       <li class="breadcrumb-item">Login</li>
     </ol>
   </div>
@@ -31,11 +31,11 @@
     <div class="col-lg6 col-md-8">
       <!--error message section -->
       <ul>
-        <li class="alert alert-succcess" role="alert"></li>
-        <li class="alert alert-danger" role="alert" ></li>
+      <!--//Render of not empty-->
+        <li class="alert alert-success" th:if="${!#strings.isEmpty(alertMsg)}" th:text="${alertMsg}"role="alert"></li>
       </ul>
       <!--error message section -->
-      <form class="login-form" action="#" method="post">
+      <form class="login-form" th:action="@{/login}" method="POST">
       <!--fields-->
         <div class="form-floating">
           <input type="text" id="username" class="form-control" placeholder="username">
@@ -49,7 +49,7 @@
         <div class="row">
           <div class="col">
             <button class="btn btn-primary">Login</button>
-            <a href="" class="new-user text-right">Sign Up</a>
+            <a th:href="@{/public/signup}" class="new-user text-right">Sign Up</a>
           </div>
         </div>
 

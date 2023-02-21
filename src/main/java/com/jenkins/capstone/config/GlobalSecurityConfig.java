@@ -5,6 +5,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
@@ -35,6 +38,7 @@ public class GlobalSecurityConfig {
                     auth.requestMatchers("/projects").permitAll();
                     auth.requestMatchers("/training/**").permitAll();
                     auth.requestMatchers("/contact").permitAll();
+                    auth.requestMatchers("/public/**").permitAll();
                     auth.requestMatchers("/saveMsg").permitAll();
                 })
                 .formLogin(form -> {
@@ -49,6 +53,22 @@ public class GlobalSecurityConfig {
                 .httpBasic(Customizer.withDefaults())
                 .build();
 
+    }
+
+    @Bean
+    public InMemoryUserDetailsManager userDetailsManager(){
+        UserDetails user = User.withDefaultPasswordEncoder()
+                .username("user")
+                .password("password")
+                .roles("USER")
+                .build();
+
+        UserDetails admin = User.withDefaultPasswordEncoder()
+                .username("admin")
+                .password("password")
+                .roles("ADMIN")
+                .build();
+        return new InMemoryUserDetailsManager(user, admin);
     }
 
 
