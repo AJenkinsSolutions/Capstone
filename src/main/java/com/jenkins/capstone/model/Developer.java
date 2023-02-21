@@ -63,4 +63,35 @@ public class Developer extends AuditEntity {
     @NotBlank(message = "confirm password is required.")
     @Transient
     private String confirmPwd;
+
+                            //    Relationships  //
+
+    //    OneToOne     //
+    /**
+     * FetchType : Tells spring to load the child entities when the bean is created
+     * cascadePer
+     * Cascade: Persist: we don't need to use update role, so persist it, i think
+     * ReferenceColumnName: name == db column name, referencedColumnName == Entity field Name
+     * This relationship cannot be nullable
+     */
+    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST, targetEntity = Roles.class)
+    @JoinColumn( name = "role_id", referencedColumnName = "roleId", nullable = false)
+    private Roles roles;
+
+    /**
+     * cascade type All - we want all the records to be deleted
+     * Nullable True - Because a developer doesn't need to specify his or her skills up front
+     */
+
+    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL, targetEntity = Skills.class)
+    @JoinColumn( name = "skills_id", referencedColumnName = "skillsId", nullable = true)
+    private Skills skills;
+
+    //    To Many    //
+
+
+
+
+
+
 }
