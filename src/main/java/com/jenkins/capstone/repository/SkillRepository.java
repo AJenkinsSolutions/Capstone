@@ -1,9 +1,9 @@
 package com.jenkins.capstone.repository;
 
-import com.jenkins.capstone.model.Roles;
+import com.jenkins.capstone.model.Skills;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface RoleRepository extends JpaRepository <Roles, Integer> {
+public interface SkillRepository extends JpaRepository <Skills, Integer> {
 }
