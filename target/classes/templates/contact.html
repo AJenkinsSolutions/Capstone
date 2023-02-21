@@ -38,15 +38,15 @@
             <h5 class="contact-subtitle text-center text-muted mb-4 pb-2 pb-md-0 mb-md-5">Ask a question </h5>
             <!--field-->
             <ul>
-              //fields is a property of thymeleaf
-              //To perform form field operations
+<!--              //fields is a property of thymeleaf-->
+<!--              //To perform form field operations-->
               <li class="alert alert-danger" role="alert" th:each="error : ${#fields.errors('contact.*')}" th:text="${error}" ></li>
             </ul>
 
 
-            //Populating the contact object we defined in our controller with values from the
-            //Form fields
-            <form action="/saveMessage" class="contact-form" th:object="${contact}">
+<!--            //Populating the contact object we defined in our controller with values from the-->
+<!--            //Form fields-->
+            <form action="/saveMsg" method="post" class="contact-form" th:object="${contact}">
 
               <div class="row">
                 <div class="col-md-6 mb-4">

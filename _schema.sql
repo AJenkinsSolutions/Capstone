@@ -2,7 +2,7 @@ CREATE DATABASE projectPilotDb;
 
 USE projectPilotDb; 
 
-CREATE TABLE IF NOT EXISTS `applicant_msg` (
+CREATE TABLE IF NOT EXISTS `contact` (
 	`contact_id` int AUTO_INCREMENT  PRIMARY KEY,
     `name` varchar(100) NOT NULL,
     `mobile_num` varchar(10) NOT NULL,

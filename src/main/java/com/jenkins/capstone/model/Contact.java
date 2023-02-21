@@ -1,21 +1,29 @@
 package com.jenkins.capstone.model;
 
+import com.jenkins.capstone.audit.AuditEntity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
-import lombok.Data;
+import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
-@Data
+import java.time.LocalDateTime;
+
+@Getter
+@Setter
 @Entity
-@Table(name = "applicant_msg")
-public class Contact extends CoreEntity{
+@Table(name = "contact")
+public class Contact extends AuditEntity {
+
+
+
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+    @GenericGenerator(name = "native", strategy = "native")
     @Column(name = "contact_id")
     private int contactId;
 
@@ -29,14 +37,17 @@ public class Contact extends CoreEntity{
      */
     @NotBlank(message = "Must enter a mobileNumber")
     @Pattern(regexp = "(^$|[0-9]{10})", message = "Number must be 10 digits")
+    @Column(name = "mobile_num")
     private String mobileNum;
 
     @NotBlank(message = "Email cannot be blank")
     @Email(message = "Please enter a valid email")
     private String email;
 
+
     @NotBlank(message = "Must choose an account type")
-    @Pattern(regexp = "^(?i)(developer|admin)$\n", message = "does not match either \"developer\" or \"admin\"")
+    @Pattern(regexp = "^(?=.*\\b(dev|admin)\\b)(?!.*\\b(dev.*admin|admin.*dev)\\b).*$", message = "does not match either \"developer\" or \"admin\"")
+    @Column(name = "account_type")
     private String accountType;
 
     @NotBlank(message = "Message cannot be blank")
@@ -48,7 +59,8 @@ public class Contact extends CoreEntity{
     //Open or closed
     private String status;
 
+    public Contact() {
 
-
-
+        System.out.println("New Contact bean add to ioc");
+    }
 }

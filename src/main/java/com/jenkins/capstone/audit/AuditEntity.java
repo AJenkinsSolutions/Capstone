@@ -1,4 +1,4 @@
-package com.jenkins.capstone.model;
+package com.jenkins.capstone.audit;
 
 
 import jakarta.persistence.Column;
@@ -10,14 +10,12 @@ import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-import org.springframework.stereotype.Controller;
 
 import java.time.LocalDateTime;
 
 /**
  * This class holds data that will be common amoung multiple pojos, so we can reduce code
- * MappedSuperClass: says whenever there are pojos that extend this class please treat the feilds in here as
- * columns within there table
+ * MappedSuperClass: tells spring that this is just a superclass not a table
  * @EntityListener(): Tells spring to treat this class an entity that supports auditing
  * Tells us when ever a entity is created updated etc
  *  @Date: 02/20/23
@@ -27,7 +25,7 @@ import java.time.LocalDateTime;
 @Data
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
-public class CoreEntity {
+public class AuditEntity {
 
     /**
      * Get date created and create by who
@@ -53,8 +51,11 @@ public class CoreEntity {
      * @Capstone
      */
     @LastModifiedDate
-    @Column
+    @Column(insertable = false)
     private LocalDateTime updatedAt;
 
+    @LastModifiedBy
+    @Column(insertable = false)
+    private String updateBy;
 
 }

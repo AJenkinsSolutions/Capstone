@@ -1,5 +1,6 @@
 package com.jenkins.capstone.model;
 
+import com.jenkins.capstone.audit.AuditEntity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -14,7 +15,7 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "trainings")
-public class Training extends CoreEntity {
+public class Training extends AuditEntity {
 
     //Seems to be equals hashcode bug in lombok
     @Id
