@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 @RequestMapping("public")
-public class publicController {
+public class PublicController {
 
     @RequestMapping(value = "/signup", method = {RequestMethod.GET})
     public String showSignupView(Model model) {
