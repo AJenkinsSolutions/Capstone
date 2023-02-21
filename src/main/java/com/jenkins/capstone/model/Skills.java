@@ -13,7 +13,7 @@ public class Skills extends AuditEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
-    private int skillId;
+    private int skillsId;
 
     @NotBlank(message = "Language is required")
     private String language;

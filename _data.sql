@@ -24,6 +24,6 @@ VALUES ('Jul 5', 'Web Security Fundamentals', 'ESSENTIALS', CURDATE(), 'DBA');
 INSERT INTO `trainings` (`day`, `training_name`, `type`, `created_at`, `created_by`)
 VALUES ('Aug 20', 'AWS Solutions Architect', 'ADVANCED', CURDATE(), 'DBA');
 
-INSERT INTO `developer` (`name`,`email`,`mobile_number`,`pwd`,`role_id`,`created_at`, `created_by`)
-VALUES ('Admin','admin@jenkins.com','3443434343','$2a$12$jBpVAVdkO9m3eDGs4Qm7YOe0DDSQ8RbK/i8/ymVTjLseMyfdbn.yy
-', 1 ,CURDATE(),'DBA');
+-- INSERT INTO `developer` (`name`,`email`,`mobile_number`,`pwd`,`role_id`,`created_at`, `created_by`)
+-- VALUES ('Admin','admin@jenkins.com','3443434343','$2a$12$jBpVAVdkO9m3eDGs4Qm7YOe0DDSQ8RbK/i8/ymVTjLseMyfdbn.yy
+-- ', 1 ,CURDATE(),'DBA');

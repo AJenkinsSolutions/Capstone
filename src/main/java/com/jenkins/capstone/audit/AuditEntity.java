@@ -56,6 +56,6 @@ public class AuditEntity {
 
     @LastModifiedBy
     @Column(insertable = false)
-    private String updateBy;
+    private String updatedBy;
 
 }

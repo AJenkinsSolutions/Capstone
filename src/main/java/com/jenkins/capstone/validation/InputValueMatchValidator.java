@@ -10,27 +10,27 @@ public class InputValueMatchValidator implements ConstraintValidator<InputValueM
     /**
      * Define the inoput fields
      */
-    private String input;
-    private String inputMatch;
+    private String field;
+    private String fieldMatch;
 
 
     @Override
     public void initialize(InputValueMatch constraintAnnotation) {
-        this.input = constraintAnnotation.field();
-        this.inputMatch = constraintAnnotation.fieldMatch();
+        this.field = constraintAnnotation.field();
+        this.fieldMatch = constraintAnnotation.fieldMatch();
     }
 
     @Override
     public boolean isValid(Object value, ConstraintValidatorContext constraintValidatorContext) {
         //Get the name of each input
-        Object inputValue = new BeanWrapperImpl(value).getPropertyValue(input);
-        Object inputMatchValue = new BeanWrapperImpl(value).getPropertyValue(inputMatch);
+        Object fieldValue = new BeanWrapperImpl(value).getPropertyValue(field);
+        Object fieldMatchValue = new BeanWrapperImpl(value).getPropertyValue(fieldMatch);
         // if they are equal it will run
 
-        if(inputValue != null){
-            return inputValue.equals(inputMatchValue);
+        if(fieldValue != null){
+            return fieldValue.equals(fieldMatchValue);
         }else{
-            return inputMatchValue == null;
+            return fieldMatchValue == null;
         }
     }
 }

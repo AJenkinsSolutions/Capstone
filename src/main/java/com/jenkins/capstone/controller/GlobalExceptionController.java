@@ -22,10 +22,10 @@ public class GlobalExceptionController {
      */
     @ExceptionHandler(Exception.class)
     public ModelAndView exceptionHandler(Exception exception){
-        ModelAndView errorView = new ModelAndView();
-        errorView.setViewName("error");
-        errorView.addObject("errorMsg", exception.getMessage());
-        return errorView;
+        ModelAndView errorPage = new ModelAndView();
+        errorPage.setViewName("error");
+        errorPage.addObject("errorMsg", exception.getMessage());
+        return errorPage;
     }
 
 }
