@@ -57,21 +57,6 @@ public class GlobalSecurityConfig {
 
     }
 
-    @Bean
-    public InMemoryUserDetailsManager userDetailsManager(){
-        UserDetails user = User.withDefaultPasswordEncoder()
-                .username("user")
-                .password("password")
-                .roles("USER")
-                .build();
-
-        UserDetails admin = User.withDefaultPasswordEncoder()
-                .username("admin")
-                .password("password")
-                .roles("ADMIN")
-                .build();
-        return new InMemoryUserDetailsManager(user, admin);
-    }
 
 
 

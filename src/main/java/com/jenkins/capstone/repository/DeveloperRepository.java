@@ -7,5 +7,11 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface DeveloperRepository extends JpaRepository <Developer, Integer> {
 
-
+    /**
+     * Custom query for authentication process
+     * @param email
+     * @return
+     * Author - Alex jenkins
+     */
+    Developer findByEmail(String email);
 }
