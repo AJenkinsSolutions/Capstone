@@ -105,14 +105,14 @@
 
                   <div class="form-check form-switch">
                     <label for="frontEnd" class="form-label">Front end</label>
-                    <input th:field="*{frontEnd}" type="checkbox" id="frontEnd" name="frontEnd" class="profile-input mandatory-input form-check-input">
+                    <input th:field="*{frontEnd}" type="checkbox" id="frontEnd" name="frontEnd" class="profile-input  form-check-input" th:value="${userProfile.isFrontEnd()}">
                   </div>
                 </div>
 
                 <div class="col-md-6 mb-4">
                   <div class="form-check form-switch">
                     <label for="backEnd" class="form-label">Back end</label>
-                    <input th:field="*{backEnd}" type="checkbox" id="backEnd" name="backEnd" class="profile-input mandatory-input form-check-input">
+                    <input th:field="*{backEnd}" type="checkbox" id="backEnd" name="backEnd" class="profile-input  form-check-input" th:value="${userProfile.isBackEnd()}">
                   </div>
                 </div>
               </div>
@@ -122,7 +122,7 @@
             <div class="row justify-content-center align-items-center">
 
               <div class="col-md">
-                <a  class="btn btn-primary btn-lg" type="submit" >Update</a>
+                <button  class="btn btn-primary btn-lg" type="submit" >Update</button>
               </div>
 
               <div class="col-md">

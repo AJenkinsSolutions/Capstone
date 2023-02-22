@@ -37,6 +37,7 @@ public class GlobalSecurityConfig {
                 .authorizeHttpRequests(auth -> {
                     auth.requestMatchers("/dashboard").authenticated();
                     auth.requestMatchers("/showUserProfileView").authenticated();
+                    auth.requestMatchers("/updateProfile").authenticated();
                     auth.requestMatchers("/assets/**").permitAll();
                     auth.requestMatchers("").permitAll();
                     auth.requestMatchers("/").permitAll();
@@ -47,7 +48,7 @@ public class GlobalSecurityConfig {
                     auth.requestMatchers("/contact").permitAll();
                     auth.requestMatchers("/public/**").permitAll();
                     auth.requestMatchers("/saveMsg").permitAll();
-                    auth.requestMatchers("/showUserProfileView").permitAll();
+
                 })
                 .formLogin(form -> {
                     form.loginPage("/login").permitAll();

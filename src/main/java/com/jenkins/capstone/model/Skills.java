@@ -20,11 +20,9 @@ public class Skills extends AuditEntity {
     @NotBlank(message = "Language is required")
     private String language;
 
-    @NotBlank(message = "Specify if front End development is in your skill set")
     @Column(name = "front_end")
     private boolean frontEnd;
 
-    @NotBlank(message = "Specify if backEnd development is in your skill set")
     @Column(name = "back_end")
     private boolean backEnd;
 

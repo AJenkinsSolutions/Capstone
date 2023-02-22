@@ -29,10 +29,9 @@ public class UserProfile {
     @NotBlank(message = "Language is required")
     private String language;
 
-    @NotBlank(message = "Specify if front End development is in your skill set")
+
     private boolean frontEnd;
 
-    @NotBlank(message = "Specify if backEnd development is in your skill set")
     private boolean backEnd;
 
     private String ide;
