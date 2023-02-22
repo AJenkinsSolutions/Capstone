@@ -14,6 +14,8 @@ import java.util.Optional;
  */
 @Component("auditAwareImpl")
 public class AuditAwareImpl implements AuditorAware<String> {
+
+
     /**
      * SpringContextHolder: thos repersents the users security context,
      * getName(), Authentication
@@ -23,7 +25,6 @@ public class AuditAwareImpl implements AuditorAware<String> {
     @Override
     public Optional<String> getCurrentAuditor() {
         //Identify who is the current user trying to perfrom a certin action
-
         return Optional.ofNullable(SecurityContextHolder.getContext().getAuthentication().getName());
     }
 }

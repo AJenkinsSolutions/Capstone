@@ -4,20 +4,26 @@ import com.jenkins.capstone.model.Developer;
 import com.jenkins.capstone.model.Roles;
 import com.jenkins.capstone.repository.DeveloperRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+
+
+import org.springframework.context.annotation.Bean;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.stereotype.Component;
 
-import javax.management.relation.Role;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+
+
 
 @Component
-public class Authentication implements AuthenticationProvider {
+public class AuthenticationImpl implements AuthenticationProvider {
 
 
     @Autowired
@@ -35,22 +41,22 @@ public class Authentication implements AuthenticationProvider {
      * Sources - https://www.baeldung.com/spring-security-authentication-provider
      */
     @Override
-    public org.springframework.security.core.Authentication authenticate(org.springframework.security.core.Authentication authentication) throws AuthenticationException {
-        String email = authentication.getName();
-        String pwd = authentication.getCredentials().toString();
+    public Authentication authenticate(Authentication authentication) throws AuthenticationException {
+        //this bug took 2 hours to fix
+        //the authentication object was not getting the principle. AKA username AKA email
+        //its because it was looking at the view for the username field. aka  'name=username'
+        String name = authentication.getName();
+        String password = authentication.getCredentials().toString();
 
-        //TODO - DB logic
-        //TODO - add this as service clas after its working
-        Developer developer = developerRepository.findByEmail(email);
-        if(developer != null && developer.getDeveloperId() >0 && developer.getPwd().equals(pwd)){
+        Developer developer = developerRepository.readByName(name);
+
+        if(null != developer && developer.getDeveloperId() > 0 && password.equals(developer.getPwd())){
             return new UsernamePasswordAuthenticationToken(
                    //Spring will remove the pwd post authentication
                     developer.getName(), null, getGrantedAuthorites(developer.getRoles()));
         }else{
             throw new BadCredentialsException("Invalid credentials");
         }
-
-
 
     }
 
@@ -64,10 +70,10 @@ public class Authentication implements AuthenticationProvider {
     public List<GrantedAuthority> getGrantedAuthorites(Roles roles){
         List<GrantedAuthority> grantedAuthorityList = new ArrayList<>();
         grantedAuthorityList.add(new SimpleGrantedAuthority("ROLE" + roles.getRoleName()));
-
-
-        return
+        return grantedAuthorityList;
     }
+
+
 
     /**
      * We just have to tell this method what 'type' authentication this is
@@ -77,6 +83,6 @@ public class Authentication implements AuthenticationProvider {
      */
     @Override
     public boolean supports(Class<?> authentication) {
-        return
+        return authentication.equals(UsernamePasswordAuthenticationToken.class);
     }
 }

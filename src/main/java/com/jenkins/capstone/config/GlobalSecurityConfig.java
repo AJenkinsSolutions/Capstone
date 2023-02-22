@@ -18,6 +18,8 @@ public class GlobalSecurityConfig {
 
 
 
+
+
     /**
      * From Spring Security 5.7, the WebSecurityConfigurerAdapter is deprecated to encourage users
      * to move towards a component-based security configuration. It is recommended to create a bean
@@ -56,6 +58,23 @@ public class GlobalSecurityConfig {
                 .build();
 
     }
+
+    //v2
+//    @Bean
+//    public InMemoryUserDetailsManager userDetailsManager(){
+//        UserDetails user = User.withDefaultPasswordEncoder()
+//                .username("user")
+//                .password("password")
+//                .roles("USER")
+//                .build();
+//
+//        UserDetails admin = User.withDefaultPasswordEncoder()
+//                .username("admin")
+//                .password("adminpass")
+//                .roles("ADMIN")
+//                .build();
+//        return new InMemoryUserDetailsManager(user, admin);
+//    }
 
 
 

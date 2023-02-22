@@ -86,7 +86,10 @@
 		</dependency>
 		<!--		spring jdbc api -->
 
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
 
 
 

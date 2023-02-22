@@ -1,6 +1,11 @@
 package com.jenkins.capstone.controller;
 
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +24,8 @@ public class LoginController {
     @RequestMapping(value = "/login", method = {RequestMethod.GET, RequestMethod.POST})
     public String showLoginView(@RequestParam(required = false, value = "error")String error,
                                 @RequestParam(required = false, value = "logout")String logout,
-                                @RequestParam(required = false, value = "signup")String signup, Model model){
+                                @RequestParam(required = false, value = "signup")String signup,
+                                Model model){
         String alertMsg = null;
         //Depending on the contents of our optional Request Params
         //Alert - danger || success || info
@@ -33,6 +39,16 @@ public class LoginController {
         //Add it to the model
         model.addAttribute("alertMsg", alertMsg);
         return "/login";
+    }
+
+
+    @RequestMapping(value="/logout", method = RequestMethod.GET)
+    public String logoutPage (HttpServletRequest request, HttpServletResponse response) {
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        if (auth != null){
+            new SecurityContextLogoutHandler().logout(request, response, auth);
+        }
+        return "redirect:/login?logout=true";
     }
 
 

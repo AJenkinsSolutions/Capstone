@@ -13,7 +13,8 @@ import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
-@Data
+@Getter
+@Setter
 @Entity
 @InputValueMatch.List({
         @InputValueMatch(
