@@ -20,7 +20,7 @@ public class DashboardController {
     DeveloperRepository developerRepository;
 
     @ExceptionHandler
-    @RequestMapping("/test")
+    @RequestMapping("/dashboard")
     public String showDashboardView(Model model, Authentication authentication, HttpSession session){
         /**
          * Session management
@@ -33,7 +33,7 @@ public class DashboardController {
         model.addAttribute("username", developer.getName());
         model.addAttribute("roles", authentication.getAuthorities().toString());
 //        throw new RuntimeException("It's been a bad day Error");
-        return "test";
+        return "dashboard";
     }
 
 }

@@ -3,7 +3,7 @@
 <div th:replace="imports :: section"></div>
 
 <body>
-<title>profile</title>
+<title>Edit Profile</title>
 
 <!--header-->
 
@@ -13,11 +13,11 @@
 
 <!-- Breadcrumb -->
 <div id="about-breadcrumb" class="container m-3 p-3">
-  <h4> My Profile</h4>
+  <h4>Update Profile</h4>
   <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item">profile</li>
+      <li class="breadcrumb-item"><a th:href="@{/home}">Home</a></li>
+      <li class="breadcrumb-item">Profile</li>
     </ol>
   </div>
 </div>
@@ -35,19 +35,21 @@
         <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
           <div class="card-body p-4 p-md-5">
             <h2 class="contact-title text-center">My Profile</h2>
-            <h5 class="contact-subtitle text-center text-muted mb-4 pb-2 pb-md-0 mb-md-5">Update Profile </h5>
+            <h5 class="contact-subtitle text-center text-muted mb-4 pb-2 pb-md-0 mb-md-5">Update Profile</h5>
+
+
             <!--field-->
             <ul>
               <li class="alert alert-danger" role="alert" ></li>
             </ul>
 
-            <form>
+            <form th:action="@{/updateProfile}" method="post" class="profile-updatefrom" th:object="${userProfile}">
 
               <div class="row">
                 <div class="col-md-6 mb-4">
 
                   <div class="form-floating">
-                    <input type="text" id="name" class="form-control form-control-lg" />
+                    <input th:field="*{name}" type="text" id="name" name="username" class="profile-input form-control form-control-lg" />
                     <label class="form-label" for="name">name</label>
                   </div>
 
@@ -55,7 +57,7 @@
                 <div class="col-md-6 mb-4">
 
                   <div class="form-floating">
-                    <input type="text" id="mobileNumber" class="form-control form-control-lg" />
+                    <input th:field="*{mobileNumber}" type="text" id="mobileNumber" name="mobileNumber" class="profile-input form-control form-control-lg" />
                     <label class="form-label" for="mobileNumber">mobileNumber</label>
                   </div>
 
@@ -66,7 +68,7 @@
                 <div class="col mb-4">
 
                   <div class="form-floating">
-                    <input type="text" class="form-control form-control-lg" id="email" />
+                    <input th:field="*{email}" type="text" id="email" name="email" class="profile-input form-control form-control-lg"/>
                     <label for="email" class="form-label">email</label>
                   </div>
 
@@ -81,7 +83,7 @@
                 <div class="col mb-4">
 
                   <div class="form-floating">
-                    <input type="text" id="language" class="form-control form-control-lg" />
+                    <input th:field="*{language}" type="text" id="language" name="language" class="profile-input form-control form-control-lg" />
                     <label class="form-label" for="language">language</label>
                   </div>
                   </div>
@@ -89,7 +91,7 @@
                 <div class="col mb-4">
 
                   <div class="form-floating">
-                    <input type="text" id="ide" class="form-control form-control-lg" />
+                    <input th:field="*{ide}" type="text" id="ide" name="ide" class="profile-input form-control form-control-lg" />
                     <label class="form-label" for="ide">preferred IDE</label>
                   </div>
                 </div>
@@ -102,14 +104,14 @@
 
                   <div class="form-check form-switch">
                     <label for="frontEnd" class="form-label">Front end</label>
-                    <input class="form-check-input"type="checkbox" id="frontEnd">
+                    <input th:field="*{frontEnd}" type="checkbox" id="frontEnd" name="frontEnd" class="profile-input form-check-input">
                   </div>
                 </div>
 
                 <div class="col-md-6 mb-4">
                   <div class="form-check form-switch">
                     <label for="backEnd" class="form-label">Back end</label>
-                    <input class="form-check-input"type="checkbox" id="backEnd">
+                    <input th:field="*{backEnd}" type="checkbox" id="backEnd" name="backEnd" class="profile-input form-check-input">
                   </div>
                 </div>
               </div>
@@ -119,11 +121,13 @@
             <div class="row justify-content-center align-items-center">
 
               <div class="col-md">
-                <button class="btn btn-primary btn-lg" type="submit" value="Submit">Update</button>
+                <a  class="btn btn-primary btn-lg" type="submit" >Update</a>
               </div>
 
               <div class="col-md">
-                <button class="btn btn-primary btn-lg" type="submit" value="Submit">Back</button>
+                <a th:href="@{/dashboard} "class="profile-back-btn">
+                  <button th:formaction="@{/dashboard}" class="btn btn-primary btn-lg">BACK</button>
+                </a>
               </div>
 
             </div>

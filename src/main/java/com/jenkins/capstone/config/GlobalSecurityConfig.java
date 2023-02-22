@@ -35,7 +35,8 @@ public class GlobalSecurityConfig {
         return http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> {
-                    auth.requestMatchers("/test").authenticated();
+                    auth.requestMatchers("/dashboard").authenticated();
+                    auth.requestMatchers("/showUserProfileView").authenticated();
                     auth.requestMatchers("/assets/**").permitAll();
                     auth.requestMatchers("").permitAll();
                     auth.requestMatchers("/").permitAll();
@@ -46,6 +47,7 @@ public class GlobalSecurityConfig {
                     auth.requestMatchers("/contact").permitAll();
                     auth.requestMatchers("/public/**").permitAll();
                     auth.requestMatchers("/saveMsg").permitAll();
+                    auth.requestMatchers("/showUserProfileView").permitAll();
                 })
                 .formLogin(form -> {
                     form.loginPage("/login").permitAll();
