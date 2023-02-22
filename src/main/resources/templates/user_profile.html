@@ -2,6 +2,7 @@
 <html lang="en" data-bs-theme="light" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 <div th:replace="imports :: section"></div>
 
+
 <body>
 <title>Edit Profile</title>
 
@@ -49,7 +50,7 @@
                 <div class="col-md-6 mb-4">
 
                   <div class="form-floating">
-                    <input th:field="*{name}" type="text" id="name" name="username" class="profile-input form-control form-control-lg" />
+                    <input th:field="*{name}" type="text" id="name" name="username" class="profile-input mandatory-input form-control form-control-lg" />
                     <label class="form-label" for="name">name</label>
                   </div>
 
@@ -57,7 +58,7 @@
                 <div class="col-md-6 mb-4">
 
                   <div class="form-floating">
-                    <input th:field="*{mobileNumber}" type="text" id="mobileNumber" name="mobileNumber" class="profile-input form-control form-control-lg" />
+                    <input th:field="*{mobileNumber}" type="text" id="mobileNumber" name="mobileNumber" class="profile-input mandatory-input form-control form-control-lg" />
                     <label class="form-label" for="mobileNumber">mobileNumber</label>
                   </div>
 
@@ -68,7 +69,7 @@
                 <div class="col mb-4">
 
                   <div class="form-floating">
-                    <input th:field="*{email}" type="text" id="email" name="email" class="profile-input form-control form-control-lg"/>
+                    <input th:field="*{email}" type="text" id="email" name="email" class="profile-input mandatory-input form-control form-control-lg"/>
                     <label for="email" class="form-label">email</label>
                   </div>
 
@@ -83,7 +84,7 @@
                 <div class="col mb-4">
 
                   <div class="form-floating">
-                    <input th:field="*{language}" type="text" id="language" name="language" class="profile-input form-control form-control-lg" />
+                    <input th:field="*{language}" type="text" id="language" name="language" class="profile-input mandatory-input form-control form-control-lg" />
                     <label class="form-label" for="language">language</label>
                   </div>
                   </div>
@@ -104,14 +105,14 @@
 
                   <div class="form-check form-switch">
                     <label for="frontEnd" class="form-label">Front end</label>
-                    <input th:field="*{frontEnd}" type="checkbox" id="frontEnd" name="frontEnd" class="profile-input form-check-input">
+                    <input th:field="*{frontEnd}" type="checkbox" id="frontEnd" name="frontEnd" class="profile-input mandatory-input form-check-input">
                   </div>
                 </div>
 
                 <div class="col-md-6 mb-4">
                   <div class="form-check form-switch">
                     <label for="backEnd" class="form-label">Back end</label>
-                    <input th:field="*{backEnd}" type="checkbox" id="backEnd" name="backEnd" class="profile-input form-check-input">
+                    <input th:field="*{backEnd}" type="checkbox" id="backEnd" name="backEnd" class="profile-input mandatory-input form-check-input">
                   </div>
                 </div>
               </div>

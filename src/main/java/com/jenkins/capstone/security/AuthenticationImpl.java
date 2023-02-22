@@ -50,15 +50,15 @@ public class AuthenticationImpl implements AuthenticationProvider {
         //this bug took 2 hours to fix
         //the authentication object was not getting the principle. AKA username AKA email
         //its because it was looking at the view for the username field. aka  'name=username'
-        String name = authentication.getName();
+        String email = authentication.getName();
         String password = authentication.getCredentials().toString();
 
-        Developer developer = developerRepository.readByName(name);
+        Developer developer = developerRepository.findByEmail(email);
 
         if(null != developer && developer.getDeveloperId() > 0 && passwordEncoder.matches(password, developer.getPwd())){
             return new UsernamePasswordAuthenticationToken(
                    //Spring will remove the pwd post authentication
-                    developer.getName(), null, getGrantedAuthorites(developer.getRoles()));
+                    email, null, getGrantedAuthorites(developer.getRoles()));
         }else{
             throw new BadCredentialsException("Invalid credentials");
         }

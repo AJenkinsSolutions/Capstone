@@ -52,7 +52,7 @@ public class GlobalSecurityConfig {
                 .formLogin(form -> {
                     form.loginPage("/login").permitAll();
                     form.loginProcessingUrl("/login").permitAll();
-                    form.defaultSuccessUrl("/test", true);
+                    form.defaultSuccessUrl("/dashboard", true);
                     form.failureUrl("/login?error=true");
                 })
                 .logout(logout ->{

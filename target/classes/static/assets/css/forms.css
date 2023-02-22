@@ -1,0 +1,8 @@
+
+/*TODO - ADD MANDATORY STARS TO NOT BLANK FIELDS*/
+
+.mandatory-input::before{
+    content: "*";
+    color: var(--form-color-mandatory);
+    margin-right: 2px;
+}

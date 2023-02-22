@@ -9,6 +9,10 @@
     --site-color-04: #E5B8F4;
     --site-color-05: #cebfd2;
 
+
+    /*Labels*/
+    --form-color-mandatory: red;
+
 }
 
 body::after{

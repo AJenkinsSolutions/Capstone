@@ -19,20 +19,26 @@ public class DashboardController {
     @Autowired
     DeveloperRepository developerRepository;
 
+
+
+    /**
+     * Session management
+     * When as valid user reaches the dashboard page we will load the users details in the session
+     * Now we can use that 'currentLoggedUser' throughout the current session
+     * HttpSession
+     */
     @ExceptionHandler
     @RequestMapping("/dashboard")
     public String showDashboardView(Model model, Authentication authentication, HttpSession session){
-        /**
-         * Session management
-         * HttpSession
-         */
-        System.out.println(authentication.toString());
-        //Lets fecth the logged-in user data from the db
-        Developer developer = developerRepository.readByName(authentication.getName());
-        //Spring is pullin the name from the developer to authenticate
+
+
+//        step-1: use the authenticationObj to get the principle 'email', get user from DB
+//        Optional: Add user deatils to model
+//        Step-2: add currentLogged in user to the seesio with 'setAttribute'
+        Developer developer = developerRepository.findByEmail(authentication.getName());
         model.addAttribute("username", developer.getName());
         model.addAttribute("roles", authentication.getAuthorities().toString());
-//        throw new RuntimeException("It's been a bad day Error");
+        session.setAttribute("currentLoggedUser", developer);
         return "dashboard";
     }
 
