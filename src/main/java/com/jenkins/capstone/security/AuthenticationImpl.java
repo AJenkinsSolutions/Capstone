@@ -14,6 +14,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -28,6 +29,10 @@ public class AuthenticationImpl implements AuthenticationProvider {
 
     @Autowired
     private DeveloperRepository developerRepository;
+
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     /**
      * Authentication obj will get the Username and Password
@@ -50,7 +55,7 @@ public class AuthenticationImpl implements AuthenticationProvider {
 
         Developer developer = developerRepository.readByName(name);
 
-        if(null != developer && developer.getDeveloperId() > 0 && password.equals(developer.getPwd())){
+        if(null != developer && developer.getDeveloperId() > 0 && passwordEncoder.matches(password, developer.getPwd())){
             return new UsernamePasswordAuthenticationToken(
                    //Spring will remove the pwd post authentication
                     developer.getName(), null, getGrantedAuthorites(developer.getRoles()));

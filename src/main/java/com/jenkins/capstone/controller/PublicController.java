@@ -30,7 +30,7 @@ public class PublicController {
     @RequestMapping(value = "/signup", method = {RequestMethod.GET})
     public String showSignupView(Model model) {
         model.addAttribute("developer", new Developer());
-        return "signup";
+        return "signup.html";
     }
 
     /**
@@ -49,7 +49,7 @@ public class PublicController {
         }
         boolean saveComplete = developerService.AddDeveloper(developer);
         if (saveComplete){
-            return "redirect:/login?signup=true";
+            return "redirect:/login?=true";
         }
         return "signup";
 

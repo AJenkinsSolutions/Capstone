@@ -7,6 +7,7 @@ import com.jenkins.capstone.repository.DeveloperRepository;
 import com.jenkins.capstone.repository.RoleRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import javax.management.relation.Role;
@@ -19,6 +20,9 @@ public class DeveloperService {
 
     @Autowired
     private RoleRepository roleRepository;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     public DeveloperService() {
         System.out.println("DeveloperService bean created");
@@ -40,6 +44,8 @@ public class DeveloperService {
 //        //Set the role
         developer.setRoles(role);
         System.out.println("Debug: New dev role name " + developer.getRoles().getRoleName());
+//        BCRYPT HASH
+        developer.setPwd(passwordEncoder.encode(developer.getPwd()));
         //Use the repo layer to save our new developer
         Developer savedDeveloper = developerRepository.save(developer);
         System.out.println("Debug: New Saved dev details: " + savedDeveloper.toString());
