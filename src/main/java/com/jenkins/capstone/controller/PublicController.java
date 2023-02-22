@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -27,6 +28,7 @@ public class PublicController {
      * @param model - How the view layer holds the values we hand to it
      * @return
      */
+    @ExceptionHandler
     @RequestMapping(value = "/signup", method = {RequestMethod.GET})
     public String showSignupView(Model model) {
         model.addAttribute("developer", new Developer());
@@ -42,6 +44,7 @@ public class PublicController {
      * @param errors
      * @return View
      */
+    @ExceptionHandler
     @RequestMapping(value = "/addAccount", method = {RequestMethod.POST})
     public String addAccount(@Valid @ModelAttribute("developer") Developer developer, Errors errors){
         if(errors.hasErrors()){

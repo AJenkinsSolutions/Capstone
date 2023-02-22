@@ -1,0 +1,110 @@
+<!doctype html>
+<!--//sec for secruity Authorization methods-->
+<html lang="en" data-bs-theme="light" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<div th:replace="imports :: section"></div>
+
+<body>
+<title>contact</title>
+
+<!--header-->
+
+<div th:replace="header :: header"></div>
+<!--header-->
+<!-- placement flex center -->
+
+<!-- Breadcrumb -->
+<div id="about-breadcrumb" class="container m-3 p-3">
+  <h4> Dashboard</h4>
+  <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a th:href="@{/home}">Home</a></li>
+      <li class="breadcrumb-item">Dashboard</li>
+    </ol>
+  </div>
+</div>
+<!--breadCrumb-->
+
+<!--main section-->
+  <section class="section">
+
+    <div class="table-responsive-class">
+
+      <div class="row mb-4">
+        <div class="overview-wrap">
+          <h3 class="heading"> Manage your projects</h3>
+          <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#createProject">CREATE PROJECT</button>
+        </div>
+
+      </div>
+
+      <!-- Button trigger modal -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" data-bs-theme="light">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel" style="background-color: #F0F2F5">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" data-bs-theme="light">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer" data-bs-theme="light">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--      table-->
+
+      <table class="table table-striped table-hover">
+        <thead class="table-dark">
+        <tr>
+          <th scope="col">Project ID</th>
+          <th scope="col">Project Name</th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr th:each="project: ${project}">
+              <td></td>
+              <td><a th:text="${project}"></a></td>
+<!--            redirects to to view devs page-->
+              <td><a th:href="@{/admin/}" class="btn btn-success"></a></td>
+              <td><a th:href="@{/admin/deleteProject}" class="btn btn-danger"></a></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+    <div class="col-md-2" >
+      <a th:href="@{//dashboard}"></a>
+    <button class="btn btn-secondary">BACK</button>
+    </div>
+  </section>
+
+<!--main section-->
+
+
+
+<!--Scroll-btn-->
+<button class="btn btn-primary" data-bs-theme="" id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+<!--Scroll-btn-->
+<!--footer-->
+<div th:replace="footer :: footer"></div>
+<!--footer-->
+
+
+
+
+</body>
+</html>

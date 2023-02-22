@@ -90,6 +90,9 @@ public class Developer extends AuditEntity {
 
     //    To Many    //
 
+    @ManyToOne(fetch = FetchType.LAZY, optional = true)
+    @JoinColumn(name = "project_id", referencedColumnName = "projectId", nullable =true)
+    private Project project;
 
 
 

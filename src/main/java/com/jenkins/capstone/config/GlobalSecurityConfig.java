@@ -38,7 +38,8 @@ public class GlobalSecurityConfig {
                     auth.requestMatchers("/dashboard").authenticated();
                     auth.requestMatchers("/showUserProfileView").authenticated();
                     auth.requestMatchers("/updateProfile").authenticated();
-                    auth.requestMatchers("/assets/**").permitAll();
+                    auth.requestMatchers("/showInboxView").authenticated();
+                    auth.requestMatchers("/admin/**").hasRole("ADMIN");                    auth.requestMatchers("/assets/**").permitAll();
                     auth.requestMatchers("").permitAll();
                     auth.requestMatchers("/").permitAll();
                     auth.requestMatchers("/home").permitAll();
