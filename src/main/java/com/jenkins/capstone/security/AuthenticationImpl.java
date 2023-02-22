@@ -74,7 +74,7 @@ public class AuthenticationImpl implements AuthenticationProvider {
      */
     public List<GrantedAuthority> getGrantedAuthorites(Roles roles){
         List<GrantedAuthority> grantedAuthorityList = new ArrayList<>();
-        grantedAuthorityList.add(new SimpleGrantedAuthority("ROLE" + roles.getRoleName()));
+        grantedAuthorityList.add(new SimpleGrantedAuthority("ROLE_" + roles.getRoleName()));
         return grantedAuthorityList;
     }
 

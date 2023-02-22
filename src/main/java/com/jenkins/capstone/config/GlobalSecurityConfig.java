@@ -35,7 +35,7 @@ public class GlobalSecurityConfig {
         return http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> {
-                    auth.requestMatchers("/dashboard").authenticated();
+                    auth.requestMatchers("/test").authenticated();
                     auth.requestMatchers("/assets/**").permitAll();
                     auth.requestMatchers("").permitAll();
                     auth.requestMatchers("/").permitAll();
@@ -50,7 +50,7 @@ public class GlobalSecurityConfig {
                 .formLogin(form -> {
                     form.loginPage("/login").permitAll();
                     form.loginProcessingUrl("/login").permitAll();
-                    form.defaultSuccessUrl("/dashboard", true);
+                    form.defaultSuccessUrl("/test", true);
                     form.failureUrl("/login?error=true");
                 })
                 .logout(logout ->{

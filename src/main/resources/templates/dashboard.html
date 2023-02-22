@@ -1,7 +1,7 @@
 <!doctype html>
 <!--//sec for secruity Authorization methods-->
 <html lang="en" data-bs-theme="light" xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
 <div th:replace="imports :: section"></div>
 
 <body>
@@ -44,35 +44,35 @@
                                  class="rounded-circle img-fluid" style="width: 100px;" />
                         </div>
                         <h4 class="dashboard-title mb-2" th:text="${'Welcome back - ' + username}"></h4>
-                        <p class="text-muted mb-4" th:text="${'logged in as - '+ roles}"><span class="mx-2">|</span></p>
+                        <p class="text-muted mb-4" th:text="${'JobTitle - '+ roles}"><span class="mx-2"></span></p>
 
                         <div class="row">
                             <div class="col">
-                                <button type="button" class="btn btn-primary btn-rounded btn-lg">
-                                    <a th:href="@{/showProfileView}" class="fa-solid fa-user"></a> Profile
+                                <button type="button" class="btn btn-secondary btn-rounded btn-lg">
+                                    <a th:href="@{/showProfileView}" class="fa-solid fa-user"></a>Profile
                                 </button>
                             </div>
 
                             <!--Admin view-->
                             <div sec:authorize="hasRole('ROLE_ADMIN')" class="col">
-                                <button type="button" class="btn btn-primary btn-rounded btn-lg">
-                                    <a th:href="@{/showInboxView}" class="fa-duotone fa-inbox"></a>
+                                <button type="button" class="btn btn-secondary btn-rounded btn-lg">
+                                    <a th:href="@{admin/showInboxView}" class="fa-duotone fa-inbox"></a>
                                     Messages
-                                    <span class="badge rounded-pill bg-danger">99+<span class="visually-hidden">unread messages</span></span>
+                                    <span class="badge rounded-pill bg-danger">99+<span class="visually-hidden">Inbox</span></span>
                                 </button>
                             </div>
 
                             <div sec:authorize="hasRole('ROLE_ADMIN')" class="col">
-                                <button type="button" class="btn btn-primary btn-rounded btn-lg">
-                                    <a th:href="@{/showTaskView}" class="fa-solid fa-bars-progress"></a> tasks
+                                <button type="button" class="btn btn-secondary btn-rounded btn-lg">
+                                    <a th:href="@{admin/showTaskView}" class="fa-solid fa-bars-progress"></a>Tasks
                                 </button>
                             </div>
 
 
                             <div sec:authorize="hasRole('ROLE_ADMIN')" class="col">
 
-                            <button type="button" class="btn btn-primary btn-rounded btn-lg">
-                                <a th:href="@{/showProjectView}" class="fa-solid fa-rectangle-history"></a> projects
+                            <button type="button" class="btn btn-secondary btn-rounded btn-lg">
+                                <a th:href="@{dev/showProjectView}" class="fa-solid fa-rectangle-history"></a> projects
                             </button>
                         </div>
 
