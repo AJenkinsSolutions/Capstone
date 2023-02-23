@@ -8,5 +8,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ContactRepository extends CrudRepository<Contact, Integer> {
 
+    Contact findByStatus(String status);
 
+    Contact findByEmail(String email);
 }

@@ -55,11 +55,13 @@
                   <input th:field="*{name}" name="projectName" id="projectName"type="text" class="form-label">
                 </div>
               </div>
-            </form>
+
             <div class="modal-footer" data-bs-theme="light">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="submit" class="btn btn-primary">Save changes</button>
             </div>
+
+            </form>
           </div>
         </div>
       </div>
@@ -75,12 +77,12 @@
         </tr>
         </thead>
         <tbody>
-          <tr th:each="project: ${project}">
-              <td></td>
-              <td><a th:text="${project.getName()}"></a></td>
-<!--            redirects to to view devs page-->
-              <td><a th:href="@{/admin/}" class="btn btn-success"></a></td>
-              <td><a th:href="@{/admin/deleteProject}" class="btn btn-danger"></a></td>
+          <tr th:each="project: ${projectList}">
+              <td><a th:text="${project.projectId}"></a></td>
+              <td><a th:text="${project.name}"></a></td>
+            <!--            redirects to to view devs page-->
+              <td><a th:href="@{/admin/showAllDevs(projectId=${project.projectId})}" class="btn btn-success btn-sm">VIEW TEAM</a></td>
+              <td><a th:href="@{/admin/deleteProject(id=${project.projectId})}" class="btn btn-danger btn-sm">DELETE PROJECT</a></td>
           </tr>
 
         </tbody>

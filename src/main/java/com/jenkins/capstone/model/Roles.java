@@ -2,10 +2,12 @@ package com.jenkins.capstone.model;
 
 import com.jenkins.capstone.audit.AuditEntity;
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
-
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
+@EqualsAndHashCode
 @Entity
 public class Roles extends AuditEntity {
 
@@ -16,4 +18,6 @@ public class Roles extends AuditEntity {
 
 
     private String roleName;
+
+
 }

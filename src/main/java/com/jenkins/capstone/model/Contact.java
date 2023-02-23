@@ -6,19 +6,17 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.time.LocalDateTime;
-
+@AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
 @Entity
 @Table(name = "contact")
 public class Contact extends AuditEntity {
-
-
 
 
     @Id
@@ -59,8 +57,4 @@ public class Contact extends AuditEntity {
     //Open or closed
     private String status;
 
-    public Contact() {
-
-        System.out.println("New Contact bean add to ioc");
-    }
 }

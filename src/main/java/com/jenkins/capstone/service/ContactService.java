@@ -19,7 +19,7 @@ public class ContactService {
     }
 
 
-    public boolean addMessageToInbox(Contact contact){
+    public Contact addMessageToInbox(Contact contact){
         boolean saveComplete = false;
         //Set to Open By default
         contact.setStatus(ProjectConstants.OPEN);
@@ -29,7 +29,7 @@ public class ContactService {
         if(savedContact != null && savedContact.getContactId() >0){
             saveComplete = true;
         }
-        return saveComplete;
+        return savedContact;
     }
 
 

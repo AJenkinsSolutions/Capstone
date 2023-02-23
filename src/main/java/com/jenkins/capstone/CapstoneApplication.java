@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EnableJpaRepositories("com.jenkins.capstone")
-@EntityScan("com.jenkins.capstone")
+@EntityScan("com.jenkins.capstone.model")
 @EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
 public class CapstoneApplication {
 
