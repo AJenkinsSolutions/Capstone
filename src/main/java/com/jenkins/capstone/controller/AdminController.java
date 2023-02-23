@@ -97,7 +97,7 @@ public class AdminController {
         Project project = (Project) session.getAttribute("currentProject");
         Developer developerObj = developerRepository.findByEmail(developer.getEmail());
 
-        if(developerObj == null || developerObj.getDeveloperId() <1){
+        if(developerObj == null || !(developerObj.getDeveloperId() > 0) ){
             modelAndView.setViewName("redirect:/admin/showAllDevs?projectId="+project.getProjectId() + "&error=true");
             return modelAndView;
         }
@@ -107,7 +107,7 @@ public class AdminController {
 
         project.getDeveloperList().add(developerObj);
         projectRepository.save(project);
-        modelAndView.setViewName("redirect:/admin/showAllDevs?projectId"+ project.getProjectId());
+        ModelAndView modelAndView1 = new ModelAndView("redirect:/admin/showAllDevs?projectId="+ project.getProjectId());
         return modelAndView;
     }
 

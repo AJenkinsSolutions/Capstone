@@ -31,6 +31,14 @@ import org.hibernate.annotations.GenericGenerator;
 })
 public class Developer extends AuditEntity {
 
+    public Developer(int developerId, String name, String email, String mobileNumber, String pwd) {
+        this.developerId = developerId;
+        this.name = name;
+        this.email = email;
+        this.mobileNumber = mobileNumber;
+        this.pwd = pwd;
+
+    }
 
     @Id
     @GeneratedValue(strategy =  GenerationType.AUTO, generator = "native")
