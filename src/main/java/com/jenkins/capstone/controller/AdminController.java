@@ -112,20 +112,26 @@ public class AdminController {
     }
 
     @GetMapping("/removeDevFromProject")
-    public ModelAndView removeDevFromProject(Model model, @RequestParam int personId, HttpSession session) {
+    public ModelAndView removeDevFromProject(Model model, @RequestParam int developerId, HttpSession session) {
+
 //        TODO: - REFACTOR TO SERVICECLASS
-        Project project1 = (Project) session.getAttribute("currentProject");
-        Optional<Developer> person = developerRepository.findById(personId);
-//        remove class from person
-        person.get().setProject(null);
-        //remove person from clas
-        project1.getDeveloperList().remove(person.get());
-        //update the db
-        Project project1updated = projectRepository.save(project1);
-        //We have to update the sessions verison of the jenkinsClass object to match the new updated version
-        session.setAttribute("project",project1updated);
-        ModelAndView modelAndView = new ModelAndView("redirect:/admin/displayStudents?classId="+project1.getProjectId());
+//        getting current project
+//        getting selected student
+        Project currentProject = (Project) session.getAttribute("currentProject");
+        Optional<Developer> dev = developerRepository.findById(developerId);
+        //We need to remove the project from the selected dev
+        dev.get().setProject(null);
+        //Remove the dev from the project
+        currentProject.getDeveloperList().remove(dev.get());
+        //Update the db
+        Project projectUpdated = projectRepository.save(currentProject);
+        //Update session version of the current project
+        session.setAttribute("currentProject", projectUpdated);
+        //redirect
+        ModelAndView modelAndView = new ModelAndView("redirect:/admin/showProjectView?projectId="+currentProject.getProjectId());
+
         return modelAndView;
+
     }
 
 
