@@ -11,10 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
@@ -24,15 +21,14 @@ import java.util.Optional;
 @Controller
 @RequestMapping("admin")
 public class AdminController {
+
     @Autowired
     ProjectRepository projectRepository;
 
     @Autowired
     DeveloperRepository developerRepository;
 
-
-
-
+                                                                //    Project related Mappings //
 
     @RequestMapping("/showProjectView")
     public ModelAndView showProjectsView(){
@@ -73,6 +69,10 @@ public class AdminController {
         ModelAndView modelAndView = new ModelAndView("redirect:/admin/showProjectView");
         return modelAndView;
     }
+
+                                                                //    Projects + Devs Mappings  //
+
+
     @RequestMapping("/showAllDevs")
     public ModelAndView showAllDevs(@RequestParam int projectId,@RequestParam(value = "error", required = false) String error, HttpSession session){
         String errorMsg = null;
@@ -107,9 +107,27 @@ public class AdminController {
 
         project.getDeveloperList().add(developerObj);
         projectRepository.save(project);
-        ModelAndView modelAndView1 = new ModelAndView("redirect:/admin/showAllDevs?projectId="+ project.getProjectId());
+        modelAndView.setViewName("redirect:/admin/showAllDevs?projectId="+ project.getProjectId());
         return modelAndView;
     }
+
+    @GetMapping("/removeDevFromProject")
+    public ModelAndView removeDevFromProject(Model model, @RequestParam int personId, HttpSession session) {
+//        TODO: - REFACTOR TO SERVICECLASS
+        Project project1 = (Project) session.getAttribute("currentProject");
+        Optional<Developer> person = developerRepository.findById(personId);
+//        remove class from person
+        person.get().setProject(null);
+        //remove person from clas
+        project1.getDeveloperList().remove(person.get());
+        //update the db
+        Project project1updated = projectRepository.save(project1);
+        //We have to update the sessions verison of the jenkinsClass object to match the new updated version
+        session.setAttribute("project",project1updated);
+        ModelAndView modelAndView = new ModelAndView("redirect:/admin/displayStudents?classId="+project1.getProjectId());
+        return modelAndView;
+    }
+
 
 
 

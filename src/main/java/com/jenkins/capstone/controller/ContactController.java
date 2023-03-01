@@ -11,7 +11,12 @@ import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
+import java.util.List;
+
+import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 @Slf4j
 @Controller
@@ -25,8 +30,9 @@ public class ContactController {
         System.out.println("ContactService Bean add to the IoC");
     }
 
+
     /**
-     * We want to display the contatct form view
+     * We want to display the contact form view
      * we send a contact pojo to the field to be populated with the values
      * from the form fields using Thymeleaf
      * @param model
@@ -59,5 +65,28 @@ public class ContactController {
         contactService.addMessageToInbox(contact);
         return "redirect:/contact";
     }
+
+
+    @RequestMapping("/showInboxView")
+    public ModelAndView showInboxView(Model model) {
+        List<Contact> contactMsgs = contactService.findMsgsWithOpenStatus();
+        ModelAndView modelAndView = new ModelAndView("inbox");
+        modelAndView.addObject("contactMsgs",contactMsgs);
+        return modelAndView;
+    }
+
+    /**
+     *
+     * @param id catching the id from the query param
+     * @return
+     */
+    @RequestMapping(value = "/closeMsg",method = GET)
+    public String closeMsg(@RequestParam int id) {
+        contactService.updateMsgStatus(id);
+        //Refreash the page
+        return "redirect:/showInboxView";
+    }
+
+
 
 }
