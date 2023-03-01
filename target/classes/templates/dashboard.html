@@ -64,7 +64,7 @@
                                                         <!--Admin view-->
                                                     <!--Admin Access only-->
                             <div sec:authorize="hasRole('ROLE_ADMIN')" class="col">
-                                    <a  th:href="@{admin/showInboxView}" type="button" class="btn btn-secondary btn-rounded btn-lg">Messages</a>
+                                    <a  th:href="@{/showInboxView}" type="button" class="btn btn-secondary btn-rounded btn-lg">Messages</a>
                             </div>
 
 

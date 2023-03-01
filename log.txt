@@ -7736,3 +7736,997 @@ Sec-WebSocket-Key: N/Y/YnWu7avz4LKlL8JSdA==
 Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits]
 2023-03-01T14:08:41.693-06:00 DEBUG 1521 --- [Live Reload #2] o.s.boot.devtools.livereload.Connection  : Received LiveReload text frame {"command":"hello","protocols":["http://livereload.com/protocols/official-6","http://livereload.com/protocols/official-7"],"ver":"2.0.8","ext":"Chrome","extver":"2.1.0"}
 2023-03-01T14:08:41.693-06:00 DEBUG 1521 --- [Live Reload #2] o.s.boot.devtools.livereload.Connection  : Received LiveReload text frame {"command":"info","plugins":{"less":{"disable":false,"version":"1.0"}},"url":"http://localhost:8081/dashboard"}
+2023-03-01T14:11:01.954-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jenkins.capstone.controller.ProfileController#showUserProfilePage(HttpSession)
+2023-03-01T14:11:01.955-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jenkins.capstone.controller.ProfileController#showUserProfilePage(HttpSession)
+2023-03-01T14:11:01.956-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/showUserProfileView", parameters={}
+2023-03-01T14:11:01.956-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jenkins.capstone.controller.ProfileController#showUserProfilePage(HttpSession)
+2023-03-01T14:11:01.964-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-03-01T14:11:01.967-06:00  WARN 1521 --- [http-nio-8081-exec-8] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-8][user_profile] Deprecated unwrapped fragment expression "imports :: section" found in template user_profile, line 3, col 6. Please use the complete syntax of fragment expressions instead ("~{imports :: section}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:11:01.969-06:00  WARN 1521 --- [http-nio-8081-exec-8] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-8][user_profile] Deprecated unwrapped fragment expression "header :: header" found in template user_profile, line 11, col 6. Please use the complete syntax of fragment expressions instead ("~{header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:11:01.971-06:00  WARN 1521 --- [http-nio-8081-exec-8] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-8][header] Deprecated unwrapped fragment expression "loader :: section" found in template header, line 45, col 30. Please use the complete syntax of fragment expressions instead ("~{loader :: section}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:11:01.976-06:00  WARN 1521 --- [http-nio-8081-exec-8] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-8][user_profile] Deprecated unwrapped fragment expression "footer :: footer" found in template user_profile, line 152, col 6. Please use the complete syntax of fragment expressions instead ("~{footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:11:01.977-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:11:01.997-06:00 DEBUG 1521 --- [Live Reload #2] o.s.b.d.livereload.LiveReloadServer      : LiveReload connection closed
+2023-03-01T14:11:02.010-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.010-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.010-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.010-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.010-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.010-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.011-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.011-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/assets/css/breakpoints.css", parameters={}
+2023-03-01T14:11:02.011-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.011-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.011-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.011-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.011-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.011-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.011-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.012-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.012-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.012-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.012-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.012-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.012-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.012-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/assets/css/custom.css", parameters={}
+2023-03-01T14:11:02.012-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.012-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.013-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.013-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/assets/css/forms.css", parameters={}
+2023-03-01T14:11:02.013-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.013-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:11:02.014-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:11:02.014-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:11:02.021-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.022-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.024-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.025-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.025-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.025-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.025-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.025-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/assets/js/main.js", parameters={}
+2023-03-01T14:11:02.026-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.029-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.029-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.029-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.029-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.029-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.029-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.029-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/assets/js/scrollToTop.js", parameters={}
+2023-03-01T14:11:02.029-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.030-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.030-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.030-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.030-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.030-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.030-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.030-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.030-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.030-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/assets/js/darkMode.js", parameters={}
+2023-03-01T14:11:02.030-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.031-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:11:02.031-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:11:02.033-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:11:02.051-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.051-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.051-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.051-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.051-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.051-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.051-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.051-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.051-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.052-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.052-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.052-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.052-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.052-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.052-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.052-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:02.052-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:02.052-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:02.052-06:00 DEBUG 1521 --- [Live Reload #2] o.s.boot.devtools.livereload.Connection  : Established livereload connection [GET /livereload.js?ext=Chrome&extver=2.1.0 HTTP/1.1
+Host: 127.0.0.1:35729
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-platform: "macOS"
+Accept: */*
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8081/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9]
+2023-03-01T14:11:02.052-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:02.052-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:02.052-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:02.052-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:02.052-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:02.052-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:02.053-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:02.053-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:02.053-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:02.053-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:02.053-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:02.053-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:02.053-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:02.053-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:02.063-06:00 DEBUG 1521 --- [Live Reload #2] o.s.boot.devtools.livereload.Connection  : Established livereload connection [GET /livereload HTTP/1.1
+Host: 127.0.0.1:35729
+Connection: Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Upgrade: websocket
+Origin: http://localhost:8081
+Sec-WebSocket-Version: 13
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Sec-WebSocket-Key: kHiDXOLZFN6WseK4Olbd3Q==
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits]
+2023-03-01T14:11:02.066-06:00 DEBUG 1521 --- [Live Reload #2] o.s.boot.devtools.livereload.Connection  : Received LiveReload text frame {"command":"hello","protocols":["http://livereload.com/protocols/official-6","http://livereload.com/protocols/official-7"],"ver":"2.0.8","ext":"Chrome","extver":"2.1.0"}
+2023-03-01T14:11:02.066-06:00 DEBUG 1521 --- [Live Reload #2] o.s.boot.devtools.livereload.Connection  : Received LiveReload text frame {"command":"info","plugins":{"less":{"disable":false,"version":"1.0"}},"url":"http://localhost:8081/showUserProfileView"}
+2023-03-01T14:11:05.024-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jenkins.capstone.controller.DashboardController#showDashboardView(Model, Authentication, HttpSession)
+2023-03-01T14:11:05.024-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/dashboard", parameters={}
+2023-03-01T14:11:05.024-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jenkins.capstone.controller.DashboardController#showDashboardView(Model, Authentication, HttpSession)
+2023-03-01T14:11:05.029-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] org.hibernate.SQL                        : 
+    select
+        d1_0.developer_id,
+        d1_0.created_at,
+        d1_0.created_by,
+        d1_0.email,
+        d1_0.mobile_number,
+        d1_0.name,
+        d1_0.project_id,
+        d1_0.pwd,
+        d1_0.role_id,
+        d1_0.skills_id,
+        d1_0.updated_at,
+        d1_0.updated_by 
+    from
+        developer d1_0 
+    where
+        d1_0.email=?
+2023-03-01T14:11:05.140-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.role_name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.role_id=?
+2023-03-01T14:11:05.190-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-03-01T14:11:05.192-06:00  WARN 1521 --- [http-nio-8081-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-10][dashboard] Deprecated unwrapped fragment expression "imports :: section" found in template dashboard, line 5, col 6. Please use the complete syntax of fragment expressions instead ("~{imports :: section}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:11:05.193-06:00  WARN 1521 --- [http-nio-8081-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-10][dashboard] Deprecated unwrapped fragment expression "header :: header" found in template dashboard, line 12, col 6. Please use the complete syntax of fragment expressions instead ("~{header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:11:05.195-06:00  WARN 1521 --- [http-nio-8081-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-10][header] Deprecated unwrapped fragment expression "loader :: section" found in template header, line 45, col 30. Please use the complete syntax of fragment expressions instead ("~{loader :: section}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:11:05.197-06:00  WARN 1521 --- [http-nio-8081-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-10][dashboard] Deprecated unwrapped fragment expression "footer :: footer" found in template dashboard, line 97, col 6. Please use the complete syntax of fragment expressions instead ("~{footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:11:05.199-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:11:05.220-06:00 DEBUG 1521 --- [Live Reload #2] o.s.b.d.livereload.LiveReloadServer      : LiveReload connection closed
+2023-03-01T14:11:05.229-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.229-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.229-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.230-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.230-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.230-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.230-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.230-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/assets/css/breakpoints.css", parameters={}
+2023-03-01T14:11:05.230-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.231-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:11:05.232-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.232-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.233-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.233-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.233-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.233-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.233-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.233-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.233-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.233-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.234-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.234-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.234-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/assets/css/custom.css", parameters={}
+2023-03-01T14:11:05.234-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.234-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.234-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.234-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/assets/css/forms.css", parameters={}
+2023-03-01T14:11:05.234-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.235-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:11:05.235-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:11:05.244-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.245-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.245-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.245-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.244-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.245-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.245-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.245-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.245-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.245-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.245-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.245-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.245-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.245-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.245-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.245-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/assets/js/main.js", parameters={}
+2023-03-01T14:11:05.245-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.245-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/assets/js/scrollToTop.js", parameters={}
+2023-03-01T14:11:05.246-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.245-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.246-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.246-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.246-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.246-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.246-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.246-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/assets/js/darkMode.js", parameters={}
+2023-03-01T14:11:05.247-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.247-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:11:05.247-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:11:05.247-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:11:05.266-06:00 DEBUG 1521 --- [Live Reload #2] o.s.boot.devtools.livereload.Connection  : Established livereload connection [GET /livereload.js?ext=Chrome&extver=2.1.0 HTTP/1.1
+Host: 127.0.0.1:35729
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-platform: "macOS"
+Accept: */*
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8081/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9]
+2023-03-01T14:11:05.267-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.282-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.299-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.318-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.318-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.336-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.337-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.337-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.337-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.337-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.337-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.337-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.338-06:00 DEBUG 1521 --- [Live Reload #2] o.s.boot.devtools.livereload.Connection  : Established livereload connection [GET /livereload HTTP/1.1
+Host: 127.0.0.1:35729
+Connection: Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Upgrade: websocket
+Origin: http://localhost:8081
+Sec-WebSocket-Version: 13
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Sec-WebSocket-Key: 1VpLAm40tNLo4gjSM4H8OQ==
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits]
+2023-03-01T14:11:05.355-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.355-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.356-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.356-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:05.356-06:00 DEBUG 1521 --- [Live Reload #2] o.s.boot.devtools.livereload.Connection  : Received LiveReload text frame {"command":"hello","protocols":["http://livereload.com/protocols/official-6","http://livereload.com/protocols/official-7"],"ver":"2.0.8","ext":"Chrome","extver":"2.1.0"}
+2023-03-01T14:11:05.356-06:00 DEBUG 1521 --- [Live Reload #2] o.s.boot.devtools.livereload.Connection  : Received LiveReload text frame {"command":"info","plugins":{"less":{"disable":false,"version":"1.0"}},"url":"http://localhost:8081/dashboard"}
+2023-03-01T14:11:05.357-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:05.357-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:05.357-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:05.357-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:05.357-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:05.357-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:05.357-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:05.357-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:05.357-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:05.357-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:05.358-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:05.358-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:05.358-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:05.358-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:05.358-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:05.358-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:06.528-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:06.529-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:06.529-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:06.529-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:06.529-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:06.529-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:06.529-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/admin/showInboxView", parameters={}
+2023-03-01T14:11:06.530-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:06.532-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-03-01T14:11:06.532-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-03-01T14:11:06.533-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:06.534-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:06.534-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:06.534-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:06.534-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:06.534-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:06.534-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:06.534-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:06.534-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:06.535-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:06.535-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:06.535-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:06.535-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:06.535-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:06.535-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:06.535-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:06.561-06:00 DEBUG 1521 --- [Live Reload #2] o.s.b.d.livereload.LiveReloadServer      : LiveReload connection closed
+2023-03-01T14:11:08.027-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jenkins.capstone.controller.DashboardController#showDashboardView(Model, Authentication, HttpSession)
+2023-03-01T14:11:08.027-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/dashboard", parameters={}
+2023-03-01T14:11:08.027-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jenkins.capstone.controller.DashboardController#showDashboardView(Model, Authentication, HttpSession)
+2023-03-01T14:11:08.029-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] org.hibernate.SQL                        : 
+    select
+        d1_0.developer_id,
+        d1_0.created_at,
+        d1_0.created_by,
+        d1_0.email,
+        d1_0.mobile_number,
+        d1_0.name,
+        d1_0.project_id,
+        d1_0.pwd,
+        d1_0.role_id,
+        d1_0.skills_id,
+        d1_0.updated_at,
+        d1_0.updated_by 
+    from
+        developer d1_0 
+    where
+        d1_0.email=?
+2023-03-01T14:11:08.141-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.role_name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.role_id=?
+2023-03-01T14:11:08.190-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-03-01T14:11:08.191-06:00  WARN 1521 --- [http-nio-8081-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-5][dashboard] Deprecated unwrapped fragment expression "imports :: section" found in template dashboard, line 5, col 6. Please use the complete syntax of fragment expressions instead ("~{imports :: section}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:11:08.191-06:00  WARN 1521 --- [http-nio-8081-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-5][dashboard] Deprecated unwrapped fragment expression "header :: header" found in template dashboard, line 12, col 6. Please use the complete syntax of fragment expressions instead ("~{header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:11:08.195-06:00  WARN 1521 --- [http-nio-8081-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-5][header] Deprecated unwrapped fragment expression "loader :: section" found in template header, line 45, col 30. Please use the complete syntax of fragment expressions instead ("~{loader :: section}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:11:08.197-06:00  WARN 1521 --- [http-nio-8081-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-5][dashboard] Deprecated unwrapped fragment expression "footer :: footer" found in template dashboard, line 97, col 6. Please use the complete syntax of fragment expressions instead ("~{footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:11:08.199-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:11:08.223-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.223-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.223-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.223-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.223-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.223-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.223-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.223-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.223-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.224-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.224-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.224-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.224-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.224-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.224-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.224-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.224-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.224-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.224-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.224-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/assets/css/custom.css", parameters={}
+2023-03-01T14:11:08.224-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.224-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/assets/css/breakpoints.css", parameters={}
+2023-03-01T14:11:08.224-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.224-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.224-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.224-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/assets/css/forms.css", parameters={}
+2023-03-01T14:11:08.225-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.226-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:11:08.226-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:11:08.226-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:11:08.238-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.238-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.238-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.238-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.238-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.238-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.238-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.238-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.239-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.239-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.239-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.239-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.239-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.239-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/assets/js/scrollToTop.js", parameters={}
+2023-03-01T14:11:08.239-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.239-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.239-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.240-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/assets/js/darkMode.js", parameters={}
+2023-03-01T14:11:08.240-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.241-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.241-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.241-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.241-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.241-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.241-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.242-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/assets/js/main.js", parameters={}
+2023-03-01T14:11:08.242-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.242-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:11:08.243-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:11:08.244-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:11:08.316-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.316-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.316-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.316-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.316-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.317-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.317-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.317-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.317-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.316-06:00 DEBUG 1521 --- [Live Reload #2] o.s.boot.devtools.livereload.Connection  : Established livereload connection [GET /livereload.js?ext=Chrome&extver=2.1.0 HTTP/1.1
+Host: 127.0.0.1:35729
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-platform: "macOS"
+Accept: */*
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8081/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9]
+2023-03-01T14:11:08.318-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.318-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.319-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.319-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.319-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.320-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.320-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:08.321-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:08.321-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:08.321-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:08.321-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:08.321-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:08.321-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:08.321-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:08.321-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:08.321-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:08.322-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:08.322-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:08.322-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:08.322-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:08.322-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:08.322-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:08.322-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:11:08.325-06:00 DEBUG 1521 --- [Live Reload #2] o.s.boot.devtools.livereload.Connection  : Established livereload connection [GET /livereload HTTP/1.1
+Host: 127.0.0.1:35729
+Connection: Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Upgrade: websocket
+Origin: http://localhost:8081
+Sec-WebSocket-Version: 13
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Sec-WebSocket-Key: lT0g7yVBeIUR75ANX3qW0g==
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits]
+2023-03-01T14:11:08.326-06:00 DEBUG 1521 --- [Live Reload #2] o.s.boot.devtools.livereload.Connection  : Received LiveReload text frame {"command":"hello","protocols":["http://livereload.com/protocols/official-6","http://livereload.com/protocols/official-7"],"ver":"2.0.8","ext":"Chrome","extver":"2.1.0"}
+2023-03-01T14:11:08.326-06:00 DEBUG 1521 --- [Live Reload #2] o.s.boot.devtools.livereload.Connection  : Received LiveReload text frame {"command":"info","plugins":{"less":{"disable":false,"version":"1.0"}},"url":"http://localhost:8081/dashboard"}
+2023-03-01T14:11:09.318-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:09.319-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:09.319-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:09.319-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:09.319-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:09.319-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:09.319-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/admin/showInboxView", parameters={}
+2023-03-01T14:11:09.319-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:11:09.320-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-03-01T14:11:09.321-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-03-01T14:11:09.321-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:09.322-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:09.322-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:09.322-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:09.322-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:09.322-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:09.322-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:09.322-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:09.322-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:09.322-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:09.323-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:09.323-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:09.323-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:09.323-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:09.323-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:09.323-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-03-01T14:11:09.344-06:00 DEBUG 1521 --- [Live Reload #2] o.s.b.d.livereload.LiveReloadServer      : LiveReload connection closed
+2023-03-01T14:12:11.040-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jenkins.capstone.controller.DashboardController#showDashboardView(Model, Authentication, HttpSession)
+2023-03-01T14:12:11.041-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/dashboard", parameters={}
+2023-03-01T14:12:11.043-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jenkins.capstone.controller.DashboardController#showDashboardView(Model, Authentication, HttpSession)
+2023-03-01T14:12:11.062-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] org.hibernate.SQL                        : 
+    select
+        d1_0.developer_id,
+        d1_0.created_at,
+        d1_0.created_by,
+        d1_0.email,
+        d1_0.mobile_number,
+        d1_0.name,
+        d1_0.project_id,
+        d1_0.pwd,
+        d1_0.role_id,
+        d1_0.skills_id,
+        d1_0.updated_at,
+        d1_0.updated_by 
+    from
+        developer d1_0 
+    where
+        d1_0.email=?
+2023-03-01T14:12:11.165-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.role_name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.role_id=?
+2023-03-01T14:12:11.213-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-03-01T14:12:11.215-06:00  WARN 1521 --- [http-nio-8081-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-10][dashboard] Deprecated unwrapped fragment expression "imports :: section" found in template dashboard, line 5, col 6. Please use the complete syntax of fragment expressions instead ("~{imports :: section}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:12:11.216-06:00  WARN 1521 --- [http-nio-8081-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-10][dashboard] Deprecated unwrapped fragment expression "header :: header" found in template dashboard, line 12, col 6. Please use the complete syntax of fragment expressions instead ("~{header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:12:11.218-06:00  WARN 1521 --- [http-nio-8081-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-10][header] Deprecated unwrapped fragment expression "loader :: section" found in template header, line 45, col 30. Please use the complete syntax of fragment expressions instead ("~{loader :: section}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:12:11.219-06:00  WARN 1521 --- [http-nio-8081-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-10][dashboard] Deprecated unwrapped fragment expression "footer :: footer" found in template dashboard, line 97, col 6. Please use the complete syntax of fragment expressions instead ("~{footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:12:11.220-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:12:11.249-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.249-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.249-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.249-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.249-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.249-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.250-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.250-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.249-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.250-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.250-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.251-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.251-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.251-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.251-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/assets/css/custom.css", parameters={}
+2023-03-01T14:12:11.251-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.250-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.251-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.250-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.251-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.251-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.252-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.252-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.252-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/assets/css/forms.css", parameters={}
+2023-03-01T14:12:11.252-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/assets/css/breakpoints.css", parameters={}
+2023-03-01T14:12:11.252-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.252-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.252-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:12:11.252-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:12:11.264-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:12:11.268-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.269-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.269-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.270-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.270-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.270-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.270-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.270-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.270-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/assets/js/darkMode.js", parameters={}
+2023-03-01T14:12:11.270-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.271-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:12:11.271-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.272-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.272-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.272-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.272-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.272-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.272-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.273-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.273-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.273-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.273-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.273-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.273-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/assets/js/scrollToTop.js", parameters={}
+2023-03-01T14:12:11.273-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.273-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/assets/js/main.js", parameters={}
+2023-03-01T14:12:11.273-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.274-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.277-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:12:11.278-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:12:11.367-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.379-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.379-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.379-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.379-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.379-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.379-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.379-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.380-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.380-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.380-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.380-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.380-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.380-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.380-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.380-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.380-06:00 DEBUG 1521 --- [Live Reload #5] o.s.boot.devtools.livereload.Connection  : Established livereload connection [GET /livereload.js?ext=Chrome&extver=2.1.0 HTTP/1.1
+Host: 127.0.0.1:35729
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-platform: "macOS"
+Accept: */*
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8081/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9]
+2023-03-01T14:12:11.380-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.380-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.380-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.380-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.381-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.381-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.381-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.381-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.381-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.381-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.381-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.381-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.381-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.381-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.381-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.381-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.386-06:00 DEBUG 1521 --- [Live Reload #5] o.s.boot.devtools.livereload.Connection  : Established livereload connection [GET /livereload HTTP/1.1
+Host: 127.0.0.1:35729
+Connection: Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Upgrade: websocket
+Origin: http://localhost:8081
+Sec-WebSocket-Version: 13
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Sec-WebSocket-Key: pPAAIOIf1At2MNLxY0UI3g==
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits]
+2023-03-01T14:12:11.389-06:00 DEBUG 1521 --- [Live Reload #5] o.s.boot.devtools.livereload.Connection  : Received LiveReload text frame {"command":"hello","protocols":["http://livereload.com/protocols/official-6","http://livereload.com/protocols/official-7"],"ver":"2.0.8","ext":"Chrome","extver":"2.1.0"}
+2023-03-01T14:12:11.389-06:00 DEBUG 1521 --- [Live Reload #5] o.s.boot.devtools.livereload.Connection  : Received LiveReload text frame {"command":"info","plugins":{"less":{"disable":false,"version":"1.0"}},"url":"http://localhost:8081/dashboard"}
+2023-03-01T14:12:11.447-06:00 DEBUG 1521 --- [File Watcher] o.s.boot.devtools.livereload.Connection  : Triggering LiveReload
+2023-03-01T14:12:11.447-06:00 DEBUG 1521 --- [File Watcher] o.s.boot.devtools.livereload.Connection  : Triggering LiveReload
+2023-03-01T14:12:11.451-06:00 DEBUG 1521 --- [Live Reload #6] o.s.boot.devtools.livereload.Connection  : Established livereload connection [GET /livereload.js HTTP/1.1
+Host: 127.0.0.1:35729
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-platform: "macOS"
+Accept: */*
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9]
+2023-03-01T14:12:11.455-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jenkins.capstone.controller.DashboardController#showDashboardView(Model, Authentication, HttpSession)
+2023-03-01T14:12:11.455-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/dashboard", parameters={}
+2023-03-01T14:12:11.455-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jenkins.capstone.controller.DashboardController#showDashboardView(Model, Authentication, HttpSession)
+2023-03-01T14:12:11.457-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] org.hibernate.SQL                        : 
+    select
+        d1_0.developer_id,
+        d1_0.created_at,
+        d1_0.created_by,
+        d1_0.email,
+        d1_0.mobile_number,
+        d1_0.name,
+        d1_0.project_id,
+        d1_0.pwd,
+        d1_0.role_id,
+        d1_0.skills_id,
+        d1_0.updated_at,
+        d1_0.updated_by 
+    from
+        developer d1_0 
+    where
+        d1_0.email=?
+2023-03-01T14:12:11.510-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.role_name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.role_id=?
+2023-03-01T14:12:11.563-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-03-01T14:12:11.563-06:00  WARN 1521 --- [http-nio-8081-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-9][dashboard] Deprecated unwrapped fragment expression "imports :: section" found in template dashboard, line 5, col 6. Please use the complete syntax of fragment expressions instead ("~{imports :: section}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:12:11.564-06:00  WARN 1521 --- [http-nio-8081-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-9][dashboard] Deprecated unwrapped fragment expression "header :: header" found in template dashboard, line 12, col 6. Please use the complete syntax of fragment expressions instead ("~{header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:12:11.564-06:00  WARN 1521 --- [http-nio-8081-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-9][header] Deprecated unwrapped fragment expression "loader :: section" found in template header, line 45, col 30. Please use the complete syntax of fragment expressions instead ("~{loader :: section}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:12:11.565-06:00  WARN 1521 --- [http-nio-8081-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-9][dashboard] Deprecated unwrapped fragment expression "footer :: footer" found in template dashboard, line 97, col 6. Please use the complete syntax of fragment expressions instead ("~{footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:12:11.565-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:12:11.576-06:00 DEBUG 1521 --- [Live Reload #5] o.s.b.d.livereload.LiveReloadServer      : LiveReload connection closed
+2023-03-01T14:12:11.582-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.583-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.583-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.583-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.583-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.583-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.584-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.584-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.584-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.584-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.584-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.584-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.584-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/assets/css/custom.css", parameters={}
+2023-03-01T14:12:11.584-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.585-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.585-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:12:11.585-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.585-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.585-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.585-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.585-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.585-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.585-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/assets/css/breakpoints.css", parameters={}
+2023-03-01T14:12:11.585-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.583-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.588-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.588-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/assets/css/forms.css", parameters={}
+2023-03-01T14:12:11.589-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.592-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:12:11.593-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.593-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.593-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.593-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.593-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.593-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.593-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.593-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/assets/js/main.js", parameters={}
+2023-03-01T14:12:11.594-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.594-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:12:11.595-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:12:11.597-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.597-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.598-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.598-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.598-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.598-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.598-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.598-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/assets/js/darkMode.js", parameters={}
+2023-03-01T14:12:11.598-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.598-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:12:11.599-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.599-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.599-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.599-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.599-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.600-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.600-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.600-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/assets/js/scrollToTop.js", parameters={}
+2023-03-01T14:12:11.600-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.601-06:00 DEBUG 1521 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:12:11.623-06:00 DEBUG 1521 --- [Live Reload #5] o.s.boot.devtools.livereload.Connection  : Established livereload connection [GET /livereload.js?ext=Chrome&extver=2.1.0 HTTP/1.1
+Host: 127.0.0.1:35729
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-platform: "macOS"
+Accept: */*
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8081/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9]
+2023-03-01T14:12:11.625-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.625-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.625-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.625-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.625-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.625-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.625-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.625-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.625-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.625-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.625-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.625-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.625-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.625-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.625-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.626-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:11.626-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.626-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.626-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.626-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.626-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.626-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.626-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.626-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.626-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.626-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.627-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.627-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.627-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.627-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.627-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.627-06:00 DEBUG 1521 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:11.633-06:00 DEBUG 1521 --- [Live Reload #5] o.s.boot.devtools.livereload.Connection  : Established livereload connection [GET /livereload HTTP/1.1
+Host: 127.0.0.1:35729
+Connection: Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Upgrade: websocket
+Origin: http://localhost:8081
+Sec-WebSocket-Version: 13
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Sec-WebSocket-Key: XjBK7oZ67QVi7XUAz+P2Yg==
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits]
+2023-03-01T14:12:11.639-06:00 DEBUG 1521 --- [Live Reload #5] o.s.boot.devtools.livereload.Connection  : Received LiveReload text frame {"command":"hello","protocols":["http://livereload.com/protocols/official-6","http://livereload.com/protocols/official-7"],"ver":"2.0.8","ext":"Chrome","extver":"2.1.0"}
+2023-03-01T14:12:11.639-06:00 DEBUG 1521 --- [Live Reload #5] o.s.boot.devtools.livereload.Connection  : Received LiveReload text frame {"command":"info","plugins":{"less":{"disable":false,"version":"1.0"}},"url":"http://localhost:8081/dashboard"}
+2023-03-01T14:12:12.788-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jenkins.capstone.controller.ContactController#showInboxView(Model)
+2023-03-01T14:12:12.789-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jenkins.capstone.controller.ContactController#showInboxView(Model)
+2023-03-01T14:12:12.789-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jenkins.capstone.controller.ContactController#showInboxView(Model)
+2023-03-01T14:12:12.789-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jenkins.capstone.controller.ContactController#showInboxView(Model)
+2023-03-01T14:12:12.789-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/showInboxView", parameters={}
+2023-03-01T14:12:12.789-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.jenkins.capstone.controller.ContactController#showInboxView(Model)
+2023-03-01T14:12:12.800-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.contact_id,
+        c1_0.account_type,
+        c1_0.created_at,
+        c1_0.created_by,
+        c1_0.email,
+        c1_0.message,
+        c1_0.mobile_num,
+        c1_0.name,
+        c1_0.status,
+        c1_0.updated_at,
+        c1_0.updated_by 
+    from
+        contact c1_0 
+    where
+        c1_0.status=?
+2023-03-01T14:12:12.915-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-03-01T14:12:12.917-06:00  WARN 1521 --- [http-nio-8081-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-3][inbox] Deprecated unwrapped fragment expression "imports :: section" found in template inbox, line 3, col 6. Please use the complete syntax of fragment expressions instead ("~{imports :: section}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:12:12.918-06:00  WARN 1521 --- [http-nio-8081-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-3][inbox] Deprecated unwrapped fragment expression "header :: header" found in template inbox, line 10, col 6. Please use the complete syntax of fragment expressions instead ("~{header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:12:12.920-06:00  WARN 1521 --- [http-nio-8081-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-3][header] Deprecated unwrapped fragment expression "loader :: section" found in template header, line 45, col 30. Please use the complete syntax of fragment expressions instead ("~{loader :: section}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:12:12.921-06:00  WARN 1521 --- [http-nio-8081-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8081-exec-3][inbox] Deprecated unwrapped fragment expression "footer :: footer" found in template inbox, line 80, col 6. Please use the complete syntax of fragment expressions instead ("~{footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-03-01T14:12:12.923-06:00 DEBUG 1521 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:12:12.934-06:00 DEBUG 1521 --- [Live Reload #5] o.s.b.d.livereload.LiveReloadServer      : LiveReload connection closed
+2023-03-01T14:12:12.942-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.942-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.942-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.942-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.942-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.943-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.943-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.943-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/assets/css/breakpoints.css", parameters={}
+2023-03-01T14:12:12.943-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.943-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.943-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.943-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.943-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.943-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.943-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.943-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.943-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.943-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.944-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.944-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.944-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.944-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.944-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/assets/css/custom.css", parameters={}
+2023-03-01T14:12:12.944-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.944-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.944-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/assets/css/forms.css", parameters={}
+2023-03-01T14:12:12.944-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.944-06:00 DEBUG 1521 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:12:12.945-06:00 DEBUG 1521 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:12:12.945-06:00 DEBUG 1521 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:12:12.951-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.951-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.951-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.951-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.952-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.952-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.952-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.952-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.952-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.952-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.952-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.952-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.952-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.952-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.952-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.952-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.952-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.952-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.952-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.952-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/assets/js/main.js", parameters={}
+2023-03-01T14:12:12.952-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.952-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/assets/js/scrollToTop.js", parameters={}
+2023-03-01T14:12:12.953-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.953-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.953-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.953-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/assets/js/darkMode.js", parameters={}
+2023-03-01T14:12:12.953-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.955-06:00 DEBUG 1521 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:12:12.955-06:00 DEBUG 1521 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:12:12.955-06:00 DEBUG 1521 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-03-01T14:12:12.979-06:00 DEBUG 1521 --- [Live Reload #5] o.s.boot.devtools.livereload.Connection  : Established livereload connection [GET /livereload.js?ext=Chrome&extver=2.1.0 HTTP/1.1
+Host: 127.0.0.1:35729
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-platform: "macOS"
+Accept: */*
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8081/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9]
+2023-03-01T14:12:12.979-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.979-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.980-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.980-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.980-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.980-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.980-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.980-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.980-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.980-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.980-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.981-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.981-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.981-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.981-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.981-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-03-01T14:12:12.982-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:12.983-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:12.983-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:12.983-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:12.983-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:12.983-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:12.983-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:12.983-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:12.983-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:12.983-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:12.983-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:12.983-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:12.983-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:12.984-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:12.984-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:12.984-06:00 DEBUG 1521 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-03-01T14:12:12.985-06:00 DEBUG 1521 --- [Live Reload #5] o.s.boot.devtools.livereload.Connection  : Established livereload connection [GET /livereload HTTP/1.1
+Host: 127.0.0.1:35729
+Connection: Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Upgrade: websocket
+Origin: http://localhost:8081
+Sec-WebSocket-Version: 13
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Sec-WebSocket-Key: 8QRAw18tyQE93BlFRkGuSw==
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits]
+2023-03-01T14:12:12.990-06:00 DEBUG 1521 --- [Live Reload #5] o.s.boot.devtools.livereload.Connection  : Received LiveReload text frame {"command":"hello","protocols":["http://livereload.com/protocols/official-6","http://livereload.com/protocols/official-7"],"ver":"2.0.8","ext":"Chrome","extver":"2.1.0"}
+2023-03-01T14:12:12.991-06:00 DEBUG 1521 --- [Live Reload #5] o.s.boot.devtools.livereload.Connection  : Received LiveReload text frame {"command":"info","plugins":{"less":{"disable":false,"version":"1.0"}},"url":"http://localhost:8081/showInboxView"}
