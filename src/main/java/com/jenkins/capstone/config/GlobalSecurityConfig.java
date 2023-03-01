@@ -50,6 +50,8 @@ public class GlobalSecurityConfig {
                     auth.requestMatchers("/contact").permitAll();
                     auth.requestMatchers("/public/**").permitAll();
                     auth.requestMatchers("/saveMsg").permitAll();
+                    auth.requestMatchers("/closeMsg").permitAll();
+
 
                 })
                 .formLogin(form -> {

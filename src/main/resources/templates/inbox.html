@@ -3,7 +3,7 @@
 <div th:replace="imports :: section"></div>
 
 <body>
-<title>inbox</title>
+<title>Admin-Inbox</title>
 
 <!--header-->
 
@@ -28,11 +28,13 @@
 <section class="vh-100" >
 
 <div class="container">
+
   <div class="row">
     <div class="col">
       <h2> Unread Messages</h2>
     </div>
   </div>
+
   <div class="row">
     <div class="col">
       <table class="table table-striped table-hover">
@@ -47,13 +49,14 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-          <td>name</td>
-          <td>mobile</td>
-          <td>email</td>
-          <td>posisition</td>
-          <td>message</td>
-          <td><a href="" class="btn btn-primary">CLOSE</a></td>
+        <tr th:each="msg:${contactMsgs}">
+          <td th:text="${msg.name}"></td>
+          <td th:text="${msg.mobileNum}">mobile</td>
+          <td th:text="${msg.email}">email</td>
+          <td th:text="${msg.accountType}">position</td>
+          <td th:text="${msg.message}">message</td>
+          <!--This is how we send the id back to the controller layer-->
+          <td><a th:href="@{/closeMsg(id=${msg.contactId})}" type="button" class="btn btn-primary">CLOSE</a></td>
         </tr>
 
         </tbody>
@@ -63,9 +66,9 @@
 
 
   <div class="row-md-6 justify-content-center">
-    <button type="button" class="btn btn-primary btn-rounded btn-md">
+    <a th:href="@{/dashboard}" type="button" class="btn btn-primary btn-rounded btn-md">
       BACK
-    </button>
+    </a>
   </div>
 
 

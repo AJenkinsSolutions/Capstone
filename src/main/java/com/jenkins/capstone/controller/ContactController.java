@@ -76,14 +76,15 @@ public class ContactController {
     }
 
     /**
-     *
+     * We need to retreive the id from the message we want to close
      * @param id catching the id from the query param
      * @return
      */
     @RequestMapping(value = "/closeMsg",method = GET)
     public String closeMsg(@RequestParam int id) {
+
         contactService.updateMsgStatus(id);
-        //Refreash the page
+        //Refresh the page
         return "redirect:/showInboxView";
     }
 
