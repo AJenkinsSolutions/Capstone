@@ -19,7 +19,9 @@
   <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a th:href="@{/home}">Home</a></li>
-      <li class="breadcrumb-item">Dashboard</li>
+      <li class="breadcrumb-item"><a th:href="@{/dashboard}">Dashboard</a></li>
+      <li class="breadcrumb-item"><a th:text="${project.name}"></a></li>
+
     </ol>
   </div>
 </div>
@@ -49,12 +51,31 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <form th:action="@{/admin/addDevToProject}" method="post" class="add-project-form" th:object="${developer}">
+
             <div class="modal-body" data-bs-theme="light">
+
               <div class="input-grids">
-                <label class="control-label" for="email">Project Name</label>
-                <input th:field="*{email}" name="email" id="email"type="email" class="form-label">
+                <label class="control-label" for="email">Team Member Email</label>
+<!--                <input th:field="*{email}" name="email" id="email"type="email" class="form-label">-->
+
+
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Add Team Member
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+
+
+
               </div>
+
             </div>
+
 
             <div class="modal-footer" data-bs-theme="light">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
