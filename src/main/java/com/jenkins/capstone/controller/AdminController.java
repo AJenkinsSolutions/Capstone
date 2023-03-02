@@ -72,7 +72,14 @@ public class AdminController {
 
                                                                 //    Projects + Devs Mappings  //
 
-
+    /**
+     * This mapping displays the selected project and its current memebers
+     * you can also add memebers using a drop down
+     * @param projectId
+     * @param error
+     * @param session
+     * @return
+     */
     @RequestMapping("/showAllDevs")
     public ModelAndView showAllDevs(@RequestParam int projectId,@RequestParam(value = "error", required = false) String error, HttpSession session){
         String errorMsg = null;
@@ -80,9 +87,18 @@ public class AdminController {
 
         ModelAndView modelAndView = new ModelAndView("admin_project_devs");
         Optional <Project> project = projectRepository.findById(projectId);
+
+        //Get all the developer registered in the db
+        List<Developer> developerList = developerRepository.findAll();
+        System.out.println(developerList);
+        modelAndView.addObject("developerList", developerList);
+
+
         modelAndView.addObject("project", project.get());
         modelAndView.addObject("developer", new Developer());
+
         session.setAttribute("currentProject", project.get());
+
         if(error != null){
             errorMsg = "Invalid Email";
             modelAndView.addObject("errorMsg", errorMsg);
